@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+
+
+
+
+
+<!-- TREE -->
+        <record model="ir.ui.view" id="patient_view_tree">
+            <field name="name">matrix.patient.tree</field>
+            <field name="model">matrix.patient</field>
+            <field name="arch" type="xml">
+
+                <tree string="patient Tree">
+
+                    <field name="name"/>
+
+                </tree>
+            </field>
+        </record>
+
+
+
+
+
+
+
+<!-- ACTIONS -->
+
+
+        <!-- patient -->
+        <record model="ir.actions.act_window" id="patient_all_tree_action">
+
+            <field name="name">patient Tree Action</field>
+            
+            <field name="res_model">matrix.patient</field>
+            
+            <field name="view_type">form</field>
+
+            <field name="view_mode">tree,form</field>
+
+            <field name="domain">[]</field>
+
+            <field name="context">{}</field>
+
+            <field name="limit">1000</field>
+<!--
+            <field name="view_mode">tree,form,kanban,graph,calendar</field>
+            <field name="view_id" ref="account_line_view_contasis_tree"/>
+-->
+        </record>
+
+
+
+
+<!-- MENUS -->
+        <!-- patient --> 
+        <menuitem   id="dev_patient_all_menu"
+                    parent="parent_config_menu"
+
+                    sequence="3"
+
+                    name='Pacientes'
+                    action="patient_all_tree_action"
+                />
+
+
+	</data>
+</openerp>

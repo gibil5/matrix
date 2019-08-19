@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+
+
+
+        <!-- user -->
+        <record model="ir.actions.act_window" id="user_all_tree_action">
+
+            <field name="name">user Tree Action</field>
+            
+            <field name="res_model">matrix.user</field>
+            
+            <field name="view_type">form</field>
+
+            <field name="view_mode">tree,form</field>
+
+            <field name="domain">[]</field>
+
+            <field name="context">{}</field>
+
+            <field name="limit">1000</field>
+<!--
+            <field name="view_id" ref="account_line_view_contasis_tree"/>
+-->
+        </record>
+
+
+
+
+		<!-- user --> 
+		<menuitem   id="dev_user_all_menu"
+
+					parent="parent_dev_menu"
+			
+					sequence="7"
+
+					action="user_all_tree_action"
+				/>
+
+
+
+
+	</data>
+</openerp>

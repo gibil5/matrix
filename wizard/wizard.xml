@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+
+
+<!-- FORM -->
+		<record model="ir.ui.view" id="wizard_form_view">
+			<field name="name">matrix.wizard.form</field>
+			<field name="model">matrix.wizard</field>
+			<field name="arch" type="xml">
+			
+				<form string="wizard Form">
+
+					<field name="task_ids" widget="x2many_2d_matrix" 
+													field_x_axis="project_id" field_y_axis="user_id" field_value="planned_hours">
+						<tree>
+							<field name="project_id"/>
+							<field name="user_id"/>
+							<field name="planned_hours"/>
+						</tree>
+					</field>
+<!--
+					<sheet>
+					</sheet>
+<field name="task_ids"/>
+
+<field name="task_ids" widget="x2many_2d_matrix" field_x_axis="project_id" field_y_axis="user_id" field_value="planned_hours" />
+<field name="name" />
+<field name="name" />
+-->
+
+				</form>
+			</field>
+		</record>
+
+
+
+
+        <!-- Wizard -->
+        <record model="ir.actions.act_window" id="wizard_all_tree_action">
+
+            <field name="name">Wizard Tree Action</field>
+            
+            <field name="res_model">matrix.wizard</field>
+            
+            <field name="view_type">form</field>
+
+            <field name="view_mode">tree,form,kanban</field>
+
+            <field name="domain">[]</field>
+
+            <field name="context">{}</field>
+
+            <field name="limit">1000</field>
+<!--
+-->
+            <field name="view_id" ref="wizard_form_view"/>
+        </record>
+
+
+
+<!-- MENUS -->
+
+		<!-- wizard --> 
+		<menuitem   id="dev_wizard_all_menu"
+
+					parent="parent_dev_menu"
+
+					sequence="1"
+					
+					name='Wizards'
+
+					action="wizard_all_tree_action"
+				/>
+
+
+	</data>
+</openerp>

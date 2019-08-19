@@ -1,0 +1,37 @@
+
+        <field name="doctor_cha"/>
+        <field name="doctor_can"/>
+        <field name="doctor_abr"/>
+
+        <field name="doctor_gon"/>
+        <field name="doctor_mon"/>
+        <field name="doctor_esc"/>              
+
+
+<!--
+                        <group col="5"  class="oe_subtotal_footer oe_right  app-matrix-view">
+                            <group>
+                                <field name="slot_0_doctor_0"/>
+                                <field name="slot_1_doctor_0"/>
+                                <field name="slot_2_doctor_0"/>
+                            </group>
+
+                            <group>
+                                <field name="slot_0_doctor_1"/>
+                                <field name="slot_1_doctor_1"/>
+                                <field name="slot_2_doctor_1"/>
+                            </group>
+
+                            <group>
+                                <field name="slot_0_doctor_2"/>
+                                <field name="slot_1_doctor_2"/>
+                                <field name="slot_2_doctor_2"/>
+                            </group>
+
+                            <group>
+                                <field name="slot_0_doctor_3"/>
+                                <field name="slot_1_doctor_3"/>
+                                <field name="slot_2_doctor_3"/>
+                            </group>
+                        </group>
+-->

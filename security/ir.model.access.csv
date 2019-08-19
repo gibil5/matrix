@@ -1,0 +1,16 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_matrix_matrix,matrix.matrix,model_matrix_matrix,,1,0,0,0
+
+
+access_matrix_slot,matrix.slot,model_matrix_slot,,1,1,1,1
+
+access_matrix_container,matrix.container,model_matrix_container,,1,1,1,1
+
+access_matrix_patient,matrix.patient,model_matrix_patient,,1,1,1,1
+
+access_matrix_doctor,matrix.doctor,model_matrix_doctor,,1,1,1,1
+
+access_matrix_appointment,matrix.appointment,model_matrix_appointment,,1,1,1,1
+
+
+access_matrix_project,matrix.project,model_matrix_project,,1,1,1,1

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+
+
+
+<!-- FORM -->
+		<record model="ir.ui.view" id="agenda_form_view">
+			<field name="name">matrix.agenda.form</field>
+			<field name="model">matrix.agenda</field>
+			<field name="arch" type="xml">
+			
+				<form string="agenda Form">
+					<sheet>
+						<group>
+							<group>
+						        <field name="doctor"/>
+							</group>
+						</group>
+
+
+						<group>
+							<group>
+						        <field name="slot_0"/>
+						        <field name="slot_1"/>
+						        <field name="slot_2"/>
+
+						        <field name="slot_3"/>
+						        <field name="slot_4"/>
+						        <field name="slot_5"/>
+
+						        <field name="slot_6"/>
+						        <field name="slot_7"/>
+							</group>
+						</group>
+
+						<group>
+							<group>
+						        <field name="slot_8"/>
+
+						        <field name="slot_9"/>
+						        <field name="slot_10"/>
+						        <field name="slot_11"/>
+
+						        <field name="slot_12"/>
+						        <field name="slot_13"/>
+						        <field name="slot_14"/>
+
+						        <field name="slot_15"/>
+							</group>
+						</group>
+
+						<group>
+							<group>
+						        <field name="slot_16"/>
+						        <field name="slot_17"/>
+
+						        <field name="slot_18"/>
+						        <field name="slot_19"/>
+						        <field name="slot_20"/>
+
+						        <field name="slot_21"/>
+						        <field name="slot_22"/>
+						        <field name="slot_23"/>
+							</group>
+						</group>
+
+						<group>
+							<group>
+
+						        <field name="slot_24"/>
+						        <field name="slot_25"/>
+						        <field name="slot_26"/>
+							</group>
+						</group>
+
+					</sheet>>
+				</form>
+			</field>
+		</record>
+
+
+
+<!-- TREE -->
+		<record model="ir.ui.view" id="agenda_view_tree">
+			<field name="name">matrix.agenda.tree</field>
+			<field name="model">matrix.agenda</field>
+			<field name="arch" type="xml">
+
+				<tree string="agenda Tree">
+<!--
+			        <field name="date"/>
+-->
+					<field name="doctor"/>
+
+					<field name="slot_0"/>
+					<field name="slot_1"/>
+					<field name="slot_2"/>
+
+					<field name="slot_3"/>
+					<field name="slot_4"/>
+					<field name="slot_5"/>
+
+					<field name="slot_6"/>
+					<field name="slot_7"/>
+					<field name="slot_8"/>
+
+			        <field name="slot_9"/>
+			        <field name="slot_10"/>
+			        <field name="slot_11"/>
+
+			        <field name="slot_12"/>
+			        <field name="slot_13"/>
+			        <field name="slot_14"/>
+
+			        <field name="slot_15"/>
+			        <field name="slot_16"/>
+			        <field name="slot_17"/>
+
+			        <field name="slot_18"/>
+			        <field name="slot_19"/>
+			        <field name="slot_20"/>
+
+			        <field name="slot_21"/>
+			        <field name="slot_22"/>
+			        <field name="slot_23"/>
+
+			        <field name="slot_24"/>
+			        <field name="slot_25"/>
+			        <field name="slot_26"/>
+				</tree>
+			</field>
+		</record>
+
+
+
+
+
+
+
+<!-- ACTIONS -->
+
+
+		<!-- agenda -->
+		<record model="ir.actions.act_window" id="agenda_all_tree_action">
+
+			<field name="name">agenda Tree Action</field>
+			
+			<field name="res_model">matrix.agenda</field>
+			
+			<field name="view_type">form</field>
+
+			<field name="view_mode">tree,form,pivot</field>
+
+			<field name="domain">[]</field>
+
+			<field name="context">{}</field>
+
+			<field name="limit">1000</field>
+<!--
+			<field name="view_mode">tree,form,kanban,graph,calendar</field>
+			<field name="view_id" ref="account_line_view_contasis_tree"/>
+-->
+		</record>
+
+
+
+
+<!-- MENUS -->
+
+		<!-- agenda --> 
+<!--		
+		<menuitem   id="dev_agenda_all_menu"
+					parent="parent_app_menu"
+					sequence="0"
+					name='Agendas'
+					action="agenda_all_tree_action"
+				/>
+-->
+
+
+	</data>
+</openerp>

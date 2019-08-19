@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<openerp>
+	<data>
+
+
+
+<!-- Main - DEV -->
+<menuitem   	id="main_dev_menu"
+				sequence="-6"
+				name="DEV"
+		/>
+
+		<menuitem   id="parent_dev_menu" 
+							name="DEV"
+							parent="main_dev_menu"
+							sequence="1"
+						/>
+
+
+
+
+
+<!-- Main - app -->
+<menuitem   	id="main_app_menu"
+				sequence="-10"
+				name="CITAS"
+		/>
+
+		<!-- app --> 
+		<menuitem   id="parent_app_menu" 
+							name="Citas"
+							parent="main_app_menu"
+							sequence="1"
+						/>
+
+		<!-- Config --> 
+		<menuitem   id="parent_config_menu" 
+							name="Config"
+							parent="main_app_menu"
+							sequence="10"
+						/>
+
+
+
+
+	</data>
+</openerp>

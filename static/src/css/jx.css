@@ -1,0 +1,18 @@
+
+.app-matrix-view {
+
+    font-size: 24px;
+
+    color: #154734;  !important;
+
+    border: 3px solid #009A44;
+
+    font-weight: bold;
+}
+
+.openerp .oe_form .oe_subtotal_footer.app-matrix-view td.oe_form_group_cell {
+
+    vertical-align: middle;
+
+    padding: 3px 6px 3px 3px !important;
+}

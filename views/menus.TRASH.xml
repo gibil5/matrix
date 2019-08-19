@@ -1,0 +1,62 @@
+
+		<!-- wizard --> 
+<!--		
+		<menuitem   id="dev_wizard_all_menu"
+
+					parent="parent_dev_menu"
+			
+					sequence="0"
+
+					action="wizard_all_tree_action"
+				/>
+-->
+
+
+
+
+
+
+
+
+		<!-- user --> 
+		<menuitem   id="dev_user_all_menu"
+
+					parent="parent_dev_menu"
+			
+					sequence="7"
+
+					action="user_all_tree_action"
+				/>
+
+
+
+		<!-- Project --> 
+		<menuitem   id="dev_project_all_menu"
+
+					parent="parent_dev_menu"
+			
+					sequence="9"
+
+					action="project_all_tree_action"
+				/>
+
+		<!-- task --> 
+		<menuitem   id="dev_task_all_menu"
+
+					parent="parent_dev_menu"
+			
+					sequence="5"
+
+					action="task_all_tree_action"
+				/>
+
+
+		<!-- matrix --> 
+		<menuitem   id="dev_matrix_all_menu"
+
+					parent="parent_dev_menu"
+			
+					sequence="3"
+
+					action="matrix_all_tree_action"
+				/>

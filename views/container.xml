@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+
+
+
+<!-- FORM -->
+        <record model="ir.ui.view" id="container_form_view">
+            <field name="name">matrix.container.form</field>
+            <field name="model">matrix.container</field>
+            <field name="arch" type="xml">
+            
+                <form string="container Form">
+
+                    <!-- Header --> 
+                    <header>
+
+                        <!-- Update -->
+                        <button 
+                            type="object" 
+                            class="oe_highlight"
+                            name="update" 
+                            string='update'                           
+                        />
+                    </header>
+
+
+                    <sheet>
+                        <group>
+                            <field name="date"/>
+<!--
+                            <field name="doctor"/>
+-->
+                        </group>
+
+<notebook>
+
+<page string="Dr. Chavarri">
+    <field name="slot_0_ids">
+        <tree>
+
+            <!-- Hot Button -->
+            <button 
+                type="object" 
+                class="oe_highlight"    
+                name="open_line_current" 
+                string="ENT"
+            />
+
+            <field name="date_start"        widget="float_time"/>
+            <field name="patient"/>
+        </tree>
+    </field>
+</page>
+
+<page string="Dr. Canales">
+    <field name="slot_1_ids">
+        <tree>
+            <!-- Hot Button -->
+            <button 
+                type="object" 
+                class="oe_highlight"    
+                name="open_line_current" 
+                string="ENT"
+            />
+            <field name="date_start"        widget="float_time"/>
+            <field name="patient"/>
+        </tree>
+    </field>
+</page>
+
+<page string="Dr. Abriojo">
+    <field name="slot_2_ids">
+        <tree>
+            <!-- Hot Button -->
+            <button 
+                type="object" 
+                class="oe_highlight"    
+                name="open_line_current" 
+                string="ENT"
+            />
+            <field name="date_start"        widget="float_time"/>
+            <field name="patient"/>
+        </tree>
+    </field>
+</page>
+
+
+
+<page string="Dr. Monteverde">
+    <field name="slot_3_ids">
+        <tree>
+            <!-- Hot Button -->
+            <button 
+                type="object" 
+                class="oe_highlight"    
+                name="open_line_current" 
+                string="ENT"
+            />
+            <field name="date_start"        widget="float_time"/>
+            <field name="patient"/>
+        </tree>
+    </field>
+</page>
+
+<page string="Dr. Gonzales">
+    <field name="slot_4_ids">
+        <tree>
+            <!-- Hot Button -->
+            <button 
+                type="object" 
+                class="oe_highlight"    
+                name="open_line_current" 
+                string="ENT"
+            />
+            <field name="date_start"        widget="float_time"/>
+            <field name="patient"/>
+        </tree>
+    </field>
+</page>
+
+<page string="Dr. Escudero">
+    <field name="slot_5_ids">
+        <tree>
+            <!-- Hot Button -->
+            <button 
+                type="object" 
+                class="oe_highlight"    
+                name="open_line_current" 
+                string="ENT"
+            />
+            <field name="date_start"        widget="float_time"/>
+            <field name="patient"/>
+        </tree>
+    </field>
+</page>
+
+
+<page string="All">
+<field name="slot_ids">
+    <tree>
+        <field name="date_start"        widget="float_time"/>
+        <field name="doctor"/>
+        <field name="patient"/>
+    </tree>
+</field>
+</page>
+</notebook>
+
+<!--
+<notebook>
+<page>
+<field name="slot_ids">
+    <tree>
+        <field name="date_start"        widget="float_time"/>
+        <field name="doctor"/>
+        <field name="patient"/>
+    </tree>
+</field>
+</page>
+</notebook>
+-->
+
+                    </sheet>
+
+                </form>
+            </field>
+        </record>
+
+
+
+
+<!-- TREE -->
+        <record model="ir.ui.view" id="container_view_tree">
+            <field name="name">matrix.container.tree</field>
+            <field name="model">matrix.container</field>
+            <field name="arch" type="xml">
+
+                <tree string="container Tree">
+
+                    <field name="date"/>
+
+                    <field name="doctor"/>
+
+                    <field name="slot_ids"/>
+                </tree>
+            </field>
+        </record>
+
+
+
+
+
+
+
+<!-- ACTIONS -->
+
+
+        <!-- container -->
+        <record model="ir.actions.act_window" id="container_all_tree_action">
+
+            <field name="name">container Tree Action</field>
+            
+            <field name="res_model">matrix.container</field>
+            
+            <field name="view_type">form</field>
+
+            <field name="view_mode">tree,form</field>
+
+            <field name="domain">[]</field>
+
+            <field name="context">{}</field>
+
+            <field name="limit">1000</field>
+<!--
+            <field name="view_mode">tree,form,kanban,graph,calendar</field>
+            <field name="view_id" ref="account_line_view_contasis_tree"/>
+-->
+        </record>
+
+
+
+
+<!-- MENUS -->
+        <!-- container --> 
+        <menuitem   id="dev_container_all_menu"
+            
+                    parent="parent_app_menu"
+
+                    sequence="0"
+
+                    name="Dias"
+                    
+                    action="container_all_tree_action"
+                />
+
+
+	</data>
+</openerp>

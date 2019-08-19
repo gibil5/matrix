@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+
+
+
+<!-- CALENDAR -->
+        <record model="ir.ui.view" id="task_calendar">
+
+            <field name="name">task.calendar</field>
+            
+            <field name="model">matrix.task</field>
+            
+            <field name="arch" type="xml">
+
+<!--
+                            date_stop="appointment_end" 
+                            date_delay="duration"
+                            display="[x_display]" 
+                            quick_add="False" 
+                            color="state"
+-->
+                <calendar   
+                            string="Task"
+
+                            date_start="date_start"
+
+                            color="color_field"
+
+                            mode="day"
+                            >
+
+                        <!--<field name="user_id"/>-->
+                        <field name="name"/>
+<!--
+                        <field name="doctor"/>
+                        <field name="patient"/>
+                        <field name="patient_status"/>
+                        <field name="x_patient_name_short"/>
+                        <field name="x_doctor_code"/>
+                        <field name="x_display"/>
+-->
+                </calendar>
+            </field>
+        </record>
+
+
+
+
+
+
+
+        <!-- Graph --> 
+        <record id="matrix_graph" model="ir.ui.view">
+
+             <field name="name">matrix.graph</field>
+            
+             <field name="model">matrix.matrix</field>
+            
+             <field name="arch" type="xml">
+            
+                 <graph string="Graph">
+            
+<!--
+                     <field name="date" type="row"/>
+                     <field name="price_subtotal" type="measure"/>
+-->
+                 </graph>
+             </field>
+        </record>
+
+
+        <!-- Graph --> 
+        <record id="task_graph" model="ir.ui.view">
+
+             <field name="name">task.graph</field>
+            
+             <field name="model">matrix.task</field>
+            
+             <field name="arch" type="xml">
+            
+                 <graph string="Graph">
+            
+<!--
+                     <field name="date" type="row"/>
+                     <field name="price_subtotal" type="measure"/>
+-->
+                 </graph>
+             </field>
+        </record>
+
+
+    </data>
+</openerp>

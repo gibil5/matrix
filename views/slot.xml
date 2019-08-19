@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+
+
+
+<!-- FORM -->
+		<record model="ir.ui.view" id="slot_form_view">
+			<field name="name">matrix.slot.form</field>
+			<field name="model">matrix.slot</field>
+			<field name="arch" type="xml">
+				<form string="slot Form">
+					<sheet>
+						<group>
+							<group>
+						        <field name="patient"/>
+						        <field name="doctor"	readonly="1"/>
+<!--
+						        <field name="appointment"/>
+-->
+							</group>
+							<group>
+								<field name="date_start"      widget="float_time"	readonly="1"/>
+						        <field name="date"	readonly="1"/>
+							</group>
+						</group>
+
+						<group>
+							<group>
+<!--								
+						        <field name="container_id"/>
+
+						        <field name="container_0_id"/>
+						        <field name="container_1_id"/>
+						        <field name="container_2_id"/>
+
+						        <field name="container_3_id"/>
+						        <field name="container_4_id"/>
+						        <field name="container_5_id"/>
+-->
+
+						        <field name="slot_type"/>
+						        <field name="state"/>
+							</group>
+							<group>
+							</group>
+						</group>
+					</sheet>
+				</form>
+			</field>
+		</record>
+
+
+
+
+
+<!-- TREE -->
+		<record model="ir.ui.view" id="slot_view_tree">
+			<field name="name">matrix.slot.tree</field>
+			<field name="model">matrix.slot</field>
+			<field name="arch" type="xml">
+				<tree string="slot Tree">
+<!--
+			        <field name="date"/>
+			        <field name="name"/>
+-->
+					<field name="date_start"    widget="float_time"				/>
+
+			        <field name="patient"/>
+				</tree>
+			</field>
+		</record>
+
+
+
+
+
+<!-- TREE - Chavarri -->
+		<record model="ir.ui.view" id="slot_chavarri_view_tree">
+			<field name="name">matrix.slot.tree</field>
+			<field name="model">matrix.slot</field>
+			<field name="arch" type="xml">
+				<tree string="slot Tree">
+<!--
+			        <field name="date"/>
+			        <field name="name"/>
+-->
+					<field name="date_start"    widget="float_time"				/>
+
+			        <field name="patient"	string='Dr. Chavarri'/>
+				</tree>
+			</field>
+		</record>
+
+
+
+<!-- TREE - Canales -->
+		<record model="ir.ui.view" id="slot_canales_view_tree">
+			<field name="name">matrix.slot.tree</field>
+			<field name="model">matrix.slot</field>
+			<field name="arch" type="xml">
+				<tree string="slot Tree">
+<!--
+			        <field name="date"/>
+			        <field name="name"/>
+-->
+					<field name="date_start"    widget="float_time"/>
+
+			        <field name="patient"	string='Dr. Canales'/>
+				</tree>
+			</field>
+		</record>
+
+
+
+<!-- TREE - Abriojo -->
+		<record model="ir.ui.view" id="slot_abriojo_view_tree">
+			<field name="name">matrix.slot.tree</field>
+			<field name="model">matrix.slot</field>
+			<field name="arch" type="xml">
+				<tree string="slot Tree">
+<!--
+			        <field name="date"/>
+			        <field name="name"/>
+-->
+					<field name="date_start"    widget="float_time"/>
+
+			        <field name="patient"	string='Dr. Abriojo'/>
+				</tree>
+			</field>
+		</record>
+
+
+
+<!-- TREE - Gonzales -->
+		<record model="ir.ui.view" id="slot_gonzales_view_tree">
+			<field name="name">matrix.slot.tree</field>
+			<field name="model">matrix.slot</field>
+			<field name="arch" type="xml">
+				<tree string="slot Tree">
+					<field name="date_start"    widget="float_time"/>
+
+			        <field name="patient"	string='Dr. Gonzales'/>
+				</tree>
+			</field>
+		</record>
+
+<!-- TREE - Monteverde -->
+		<record model="ir.ui.view" id="slot_monteverde_view_tree">
+			<field name="name">matrix.slot.tree</field>
+			<field name="model">matrix.slot</field>
+			<field name="arch" type="xml">
+				<tree string="slot Tree">
+					<field name="date_start"    widget="float_time"/>
+
+			        <field name="patient"	string='Dr. Monteverde'/>
+				</tree>
+			</field>
+		</record>
+
+<!-- TREE - Escudero -->
+		<record model="ir.ui.view" id="slot_escudero_view_tree">
+			<field name="name">matrix.slot.tree</field>
+			<field name="model">matrix.slot</field>
+			<field name="arch" type="xml">
+				<tree string="slot Tree">
+					<field name="date_start"    widget="float_time"/>
+
+			        <field name="patient"	string='Dr. Escudero'/>
+				</tree>
+			</field>
+		</record>
+
+
+
+
+
+<!-- ACTIONS -->
+
+		<!-- Slots All -->
+		<record model="ir.actions.act_window" id="slot_all_tree_action">
+
+			<field name="name">All Doctors</field>
+			
+			<field name="res_model">matrix.slot</field>
+			
+			<field name="view_type">form</field>
+
+			<field name="view_mode">tree,form,</field>
+
+			<field name="domain">[]</field>
+
+			<field name="context">{}</field>
+
+			<field name="limit">1000</field>
+<!--
+			<field name="view_mode">tree,form,kanban,graph,calendar,pivot</field>
+-->
+			<field name="view_id" ref="slot_view_tree"/>
+		</record>
+
+
+
+
+		<!-- Slots chavarri - 0 -->
+		<record model="ir.actions.act_window" id="slot_chavarri_tree_action">
+
+			<field name="name">Dr Chavarri</field>
+			
+			<field name="res_model">matrix.slot</field>
+			
+			<field name="view_type">form</field>
+
+			<field name="view_mode">tree,form,</field>
+<!--
+                                    ('doctor', '=', 'Dr. Chavarri'),
+-->
+
+			<field name="domain">[
+                                    ('container_0_id', 'not in', [False]),
+				]</field>
+
+			<field name="context">{}</field>
+
+			<field name="limit">1000</field>
+<!--
+			<field name="view_mode">tree,form,kanban,graph,calendar,pivot</field>
+-->
+			<field name="view_id" ref="slot_chavarri_view_tree"/>
+		</record>
+
+
+
+		<!-- Slots canales - 1 -->
+		<record model="ir.actions.act_window" id="slot_canales_tree_action">
+
+			<field name="name">Dr Canales</field>
+			
+			<field name="res_model">matrix.slot</field>
+			
+			<field name="view_type">form</field>
+
+			<field name="view_mode">tree,form,</field>
+
+<!--
+                                    ('doctor', '=', 'Dr. Canales'),
+-->
+			<field name="domain">[
+                                    ('container_1_id', 'not in', [False]),
+				]</field>
+
+			<field name="context">{}</field>
+
+			<field name="limit">1000</field>
+<!--
+			<field name="view_mode">tree,form,kanban,graph,calendar,pivot</field>
+-->
+			<field name="view_id" ref="slot_canales_view_tree"/>
+		</record>
+
+
+<!--
+                                    ('doctor', '=', 'Dr. Abriojo'),
+-->
+		<!-- Slots abriojo - 2 -->
+		<record model="ir.actions.act_window" id="slot_abriojo_tree_action">
+
+			<field name="name">Dr Abriojo</field>
+			
+			<field name="res_model">matrix.slot</field>
+			
+			<field name="view_type">form</field>
+
+			<field name="view_mode">tree,form,</field>
+
+			<field name="domain">[
+                                    ('container_2_id', 'not in', [False]),
+				]</field>
+
+			<field name="context">{}</field>
+
+			<field name="limit">1000</field>
+<!--
+			<field name="view_mode">tree,form,kanban,graph,calendar,pivot</field>
+-->
+			<field name="view_id" ref="slot_abriojo_view_tree"/>
+		</record>
+
+
+
+
+
+
+<!--
+                                    ('doctor', '=', 'Dr. Gonzales'),
+-->
+		<!-- Gonzales - 4 -->
+		<record model="ir.actions.act_window" id="slot_gonzales_tree_action">
+
+			<field name="name">Dr Gonzales</field>
+			
+			<field name="res_model">matrix.slot</field>
+			
+			<field name="view_type">form</field>
+
+			<field name="view_mode">tree,form,</field>
+
+			<field name="domain">[
+                                    ('container_4_id', 'not in', [False]),
+				]</field>
+
+			<field name="context">{}</field>
+
+			<field name="limit">1000</field>
+
+			<field name="view_id" ref="slot_gonzales_view_tree"/>
+		</record>
+
+<!--
+
+                                    ('doctor', '=', 'Dr. Monteverde'),
+-->
+		<!-- Monteverde - 3 -->
+		<record model="ir.actions.act_window" id="slot_monteverde_tree_action">
+
+			<field name="name">Dr Monteverde</field>
+			
+			<field name="res_model">matrix.slot</field>
+			
+			<field name="view_type">form</field>
+
+			<field name="view_mode">tree,form,</field>
+
+			<field name="domain">[
+                                    ('container_3_id', 'not in', [False]),
+				]</field>
+
+			<field name="context">{}</field>
+
+			<field name="limit">1000</field>
+
+			<field name="view_id" ref="slot_monteverde_view_tree"/>
+		</record>
+
+
+<!--
+                                    ('doctor', '=', 'Dr. Escudero'),
+-->
+		<!-- Escudero - 5 -->
+		<record model="ir.actions.act_window" id="slot_escudero_tree_action">
+
+			<field name="name">Dr Escudero</field>
+			
+			<field name="res_model">matrix.slot</field>
+			
+			<field name="view_type">form</field>
+
+			<field name="view_mode">tree,form,</field>
+
+			<field name="domain">[
+                                    ('container_5_id', 'not in', [False]),
+				]</field>
+
+			<field name="context">{}</field>
+
+			<field name="limit">1000</field>
+
+			<field name="view_id" ref="slot_escudero_view_tree"/>
+		</record>
+
+
+
+
+
+
+<!-- FILTER --> 
+        <record id="slot_filter" model="ir.ui.view">
+           <field name="name">slot Search</field>
+           <field name="model">matrix.slot</field> 
+           <field name="arch" type="xml">
+               <search string="slots">
+<!--
+                <field  name="name" 
+                        filter_domain="['|',('name','ilike',self),('default_code','ilike',self)]"/>               
+-->
+                    <!-- Group By --> 
+                    <group expand="1" string="Group By">
+                        <filter name="Fecha" context="{'group_by':'date'}"/>                     
+                    </group>
+               </search>
+           </field>
+       </record>
+
+
+
+
+<!-- MENUS -->
+
+		<!-- slot --> 
+		<menuitem   id="dev_slot_all_menu"
+
+					parent="parent_config_menu"
+
+					sequence="13"
+					
+					name='Horas'
+
+					action="slot_all_tree_action"
+				/>
+
+
+		<!-- Chavarri --> 
+		<menuitem   id="dev_slot_chavarri_menu"
+
+					parent="parent_app_menu"
+
+					sequence="11"
+					
+					name='Dr. Chavarri'
+
+					action="slot_chavarri_tree_action"
+				/>
+
+		<!-- Canales --> 
+		<menuitem   id="dev_slot_canales_menu"
+
+					parent="parent_app_menu"
+
+					sequence="11"
+					
+					name='Dr. Canales'
+
+					action="slot_canales_tree_action"
+				/>
+
+		<!-- Abriojo --> 
+		<menuitem   id="dev_slot_abriojo_menu"
+
+					parent="parent_app_menu"
+
+					sequence="11"
+					
+					name='Dr. Abriojo'
+
+					action="slot_abriojo_tree_action"
+				/>
+
+
+
+
+		<!-- gonzales --> 
+		<menuitem   id="dev_slot_gonzales_menu"
+
+					parent="parent_app_menu"
+
+					sequence="11"
+					
+					name='Dr. Gonzales'
+
+					action="slot_gonzales_tree_action"
+				/>
+
+		<!-- monteverde --> 
+		<menuitem   id="dev_slot_monteverde_menu"
+
+					parent="parent_app_menu"
+
+					sequence="11"
+					
+					name='Dr. Monteverde'
+
+					action="slot_monteverde_tree_action"
+				/>
+
+		<!-- escudero --> 
+		<menuitem   id="dev_slot_escudero_menu"
+
+					parent="parent_app_menu"
+
+					sequence="11"
+					
+					name='Dr. Escudero'
+
+					action="slot_escudero_tree_action"
+				/>
+
+
+
+
+
+	</data>
+</openerp>

@@ -1,0 +1,65 @@
+						<group	col="3">
+							<group>
+								<field name="doctor_cha"/>
+								<field name="doctor_can"/>
+								<field name="doctor_abr"/>
+
+								<field name="doctor_gon"/>
+								<field name="doctor_mon"/>
+								<field name="doctor_esc"/>              
+							</group>
+							<group>
+								<field name="app_cha"/>
+<!--										
+															attrs="{ 'required':[
+																					('doctor_cha', '!=', False), 
+																				],
+																	}"/>                                
+-->
+
+								<field name="app_can"/>
+								<field name="app_abr"/>
+							</group>
+						</group>
+
+
+
+
+
+
+
+					<field name="doctor_cha"/>
+					<field name="doctor_can"/>
+
+					<field name="doctor_abr"/>              
+
+					<field name="doctor_gon"/>
+					<field name="doctor_mon"/>
+					<field name="doctor_esc"/>              
+
+<!--
+							<group>
+
+								<button 
+										type="object" 
+										class="oe_highlight"
+										name="create_app"
+										string="Crear"                               
+								/>
+
+								<button 
+										type="object" 
+										class="oe_highlight"
+										name="create_app"
+										string="Crear"                               
+								/>
+
+								<button 
+										type="object" 
+										class="oe_highlight"
+										name="create_app"
+										string="Crear"                               
+								/>
+
+							</group>
+-->
