@@ -5,6 +5,7 @@
 
 
 <!-- Main - DEV -->
+<!--
 <menuitem   	id="main_dev_menu"
 				sequence="-6"
 				name="DEV"
@@ -15,7 +16,7 @@
 							parent="main_dev_menu"
 							sequence="1"
 						/>
-
+-->
 
 
 
@@ -23,7 +24,7 @@
 <!-- Main - app -->
 <menuitem   	id="main_app_menu"
 				sequence="-10"
-				name="CITAS"
+				name="CITAS - 2019"
 		/>
 
 		<!-- app --> 
@@ -41,6 +42,12 @@
 						/>
 
 
+		<!-- Dev --> 
+		<menuitem   id="parent_dev_menu" 
+							name="DEV"
+							parent="main_app_menu"
+							sequence="13"
+						/>
 
 
 	</data>
