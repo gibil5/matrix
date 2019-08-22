@@ -97,13 +97,20 @@ class Appointment(models.Model):
 	@api.multi
 	#@api.depends('patient')
 	def _compute_x_display(self):
+
+		_dic_state = {
+						'scheduled': 'C',
+						'pre_scheduled': 'N',
+		}
+
 		for record in self:
 
 			if record.patient.name not in [False]:
-				record.x_display = record.patient.get_display_code() + ' ' + str(record.doctor.idx)
+				#record.x_display = record.patient.get_display_code() + ' ' + str(record.doctor.idx)
+				record.x_display = record.patient.get_display_code() + ' ' + str(record.doctor.idx) +  ' ' +  _dic_state[record.state]
 
 			else:
-				record.x_display = record.patient_pre.replace(' ', '_') + ' ' + str(record.doctor.idx)
+				record.x_display = record.patient_pre.replace(' ', '_') + ' ' + str(record.doctor.idx) +  ' ' +  _dic_state[record.state]
 
 
 	

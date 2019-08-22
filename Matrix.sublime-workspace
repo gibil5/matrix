@@ -529,19 +529,20 @@
 			}
 		},
 		{
-			"file": "models/oeh_patient.py",
+			"file": "models/appointment.py",
 			"settings":
 			{
-				"buffer_size": 1467,
+				"buffer_size": 3255,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "models/appointment.py",
+			"file": "models/oeh_patient.py",
 			"settings":
 			{
-				"buffer_size": 3021,
+				"buffer_size": 1467,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
@@ -940,6 +941,35 @@
 				},
 				{
 					"buffer": 1,
+					"file": "models/appointment.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3255,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2448,
+								2448
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1390.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
 					"file": "models/oeh_patient.py",
 					"semi_transient": false,
 					"settings":
@@ -951,8 +981,8 @@
 						"selection":
 						[
 							[
-								704,
-								704
+								351,
+								351
 							]
 						],
 						"settings":
@@ -962,35 +992,6 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 126.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "models/appointment.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3021,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								170,
-								170
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
