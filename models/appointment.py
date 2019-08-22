@@ -10,6 +10,14 @@ class Appointment(models.Model):
 
 
 
+# ----------------------------------------------- Relational --------------------------------
+	patient_id = fields.Many2one(
+			'oeh.medical.patient',
+			ondelete='cascade',
+		)
+
+
+
 # ----------------------------------------------- Remove  --------------------------------
 
 	@api.multi
@@ -31,12 +39,9 @@ class Appointment(models.Model):
 		print('Update')
 
 		if self.patient.name not in [False]:
-
 			self.patient_pre = self.patient.name
-
 			if self.patient.x_id_doc not in [False]:				
 				self.dni_pre = self.patient.x_id_doc
-
 			else:
 				self.dni_pre = self.patient.x_dni
 

@@ -16,14 +16,21 @@ class Patient(models.Model):
 
 
 
+# ----------------------------------------------- Relational --------------------------------
+	appointment_ids = fields.One2many(
+								'matrix.appointment', 
+								'patient_id',
+								#default=_default_app_ids,
+							)
+
+
+
 # ----------------------------------------------- Get Display Code --------------------------------
 
 	#@api.multi
 	def get_display_code(self):
-		print()
-		print('Get Display Code')
-
-		#code = self.name + ' ' + '0'
+		#print()
+		#print('Get Display Code')
 
 		words = self.name.split()
 		
