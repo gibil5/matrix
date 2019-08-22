@@ -4,49 +4,55 @@
 
  
 
-<!-- Data - Doctors -->
+<!-- Active -->
 
         <!-- Chavarri -->
-<!--
-        <record id="dr_chavarri" model="oeh.medical.physician">
--->
         <record id="dr_chavarri" model="matrix.doctor">
             <field name="name">Dr. Chavarri</field>
             <field name="idx">0</field>
         </record>
 
-        <!-- canales -->
+
+        <!-- Canales -->
         <record id="dr_canales" model="matrix.doctor">
             <field name="name">Dr. Canales</field>
             <field name="idx">1</field>
         </record>
 
-        <!-- abriojo -->
-        <record id="dr_abriojo" model="matrix.doctor">
-            <field name="name">Dr. Abriojo</field>
-            <field name="idx">2</field>
-        </record>
 
-
-
-        <record id="dr_monteverde" model="matrix.doctor">
-            <field name="name">Dr. Monteverde</field>
-            <field name="idx">3</field>
-        </record>
-
+        <!-- Gonzales -->
         <record id="dr_gonzales" model="matrix.doctor">
             <field name="name">Dr. Gonzales</field>
-            <field name="idx">4</field>
+            <field name="idx">2</field>
+        </record>
 <!--
             <field name="active">True</field>
 -->
+
+        <!-- Abriojo -->
+        <record id="dr_abriojo" model="matrix.doctor">
+            <field name="name">Dr. Abriojo</field>
+            <field name="idx">3</field>
         </record>
 
+
+        <!-- Monteverde -->
+        <record id="dr_monteverde" model="matrix.doctor">
+            <field name="name">Dr. Monteverde</field>
+            <field name="idx">4</field>
+        </record>
+
+
+
+<!-- Inactive -->
+
+        <!-- Escudero -->
         <record id="dr_escudero" model="matrix.doctor">
             <field name="name">Dr. Escudero</field>
             <field name="idx">5</field>
-        </record>
 
+            <field name="active" eval="False" />
+        </record>
 
     </data>
 </openerp>

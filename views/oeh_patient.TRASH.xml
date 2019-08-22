@@ -1,0 +1,55 @@
+
+
+        <record model="ir.ui.view" id="view_patient_form">
+
+            <field name="name">oeh.medical.patient</field>
+
+            <field name="model">oeh.medical.patient</field>
+
+            <field name="inherit_id" ref="openhealth.patient_personal_form_view"/>            
+
+            <field name="mode">primary</field>
+
+            <field name="priority">1</field>
+
+            <field name="arch" type="xml">
+
+
+<!--
+                <xpath expr="//field[@name='phone_3']" position="after">
+                    <field name="appointment_ids"/>
+                </xpath>
+-->
+                <xpath expr="//field[@name='country_id']" position="after">
+                    <field name="appointment_ids"/>
+                </xpath>
+
+
+            </field>
+        </record>
+
+
+
+
+
+
+
+
+
+<!--
+                <xpath expr="//button[@name='test']" position="after">
+                    <button 
+                            type="object"
+                            class="oe_highlight"                            
+                            name="validate"
+                            string="Validar"
+                        />
+                </xpath>
+
+
+                <xpath expr="//field[@name='x_firm']" position="after">
+                    <field name="x_firm_address"/>
+                </xpath>
+
+            <field name="inherit_id" ref="openhealth.oeh_medical_patient_view"/>            
+-->

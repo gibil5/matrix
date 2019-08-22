@@ -97,17 +97,20 @@
 				<tree string="appointment Tree">
 <!--
 					<field name="name"/>
+					<field name="date_stop"/>
+					<field name="x_display"/>
 -->
 					<field name="date_start"/>
-					<field name="date_stop"/>
+
+					<field name="patient_pre"/>
 				
 					<field name="patient"/>
 					
 					<field name="doctor"/>
 
 					<field name="app_type"/>
+
 					<field name="state"/>
-					<field name="x_display"/>
 				</tree>
 			</field>
 		</record>

@@ -16,6 +16,42 @@ class Patient(models.Model):
 
 
 
+# ----------------------------------------------- Update Apps --------------------------------
+
+	@api.multi
+	def update_appointments(self):
+		print()
+		print('Update Apps')
+
+
+		# Doctors
+		apps = self.env['matrix.appointment'].search([
+															('patient', 'in', [self.name]),
+											],
+												#order='x_serial_nr asc',
+												#limit=1,
+											)
+		#print(apps)
+
+		for app in apps:
+
+			#print(app.patient.name)
+
+			app.patient_id = self.id
+
+
+			#obj = self.appointment_ids.create({
+			#									'patient': app.patient.id,
+			#									'doctor': app.doctor.id,
+			#									'date_start': slot.date_start,
+			#									patient_id: self.id,
+			#				})
+
+
+
+
+
+
 # ----------------------------------------------- Relational --------------------------------
 	appointment_ids = fields.One2many(
 								'matrix.appointment', 
