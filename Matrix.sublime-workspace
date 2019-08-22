@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"pat",
+				"patient_pre"
+			],
+			[
+				"pa",
+				"patient"
+			],
+			[
+				"app",
+				"appointment"
+			],
+			[
+				"x",
+				"x_id_doc"
+			],
+			[
+				"dat",
+				"date_delay"
+			],
+			[
+				"re",
+				"record"
+			],
+			[
 				"co",
 				"container_0_id"
 			],
@@ -172,16 +196,8 @@
 				"create_sale_lines"
 			],
 			[
-				"pa",
-				"patient_line_id"
-			],
-			[
 				"patien",
 				"patient_line_id"
-			],
-			[
-				"dat",
-				"date"
 			],
 			[
 				"vip",
@@ -254,10 +270,6 @@
 			[
 				"grou",
 				"groups"
-			],
-			[
-				"pat",
-				"pat_line"
 			],
 			[
 				"Ve",
@@ -428,10 +440,6 @@
 				"create_recommendations_2019"
 			],
 			[
-				"re",
-				"required"
-			],
-			[
 				"Pa",
 				"Pacientes"
 			],
@@ -454,10 +462,6 @@
 			[
 				"mg",
 				"mgts"
-			],
-			[
-				"x",
-				"x_id_doc_type_code"
 			],
 			[
 				"electronic_order_id",
@@ -510,10 +514,6 @@
 			[
 				"cart",
 				"cart_line"
-			],
-			[
-				"se",
-				"sessions"
 			]
 		]
 	},
@@ -523,78 +523,7 @@
 			"file": "__openerp__.py",
 			"settings":
 			{
-				"buffer_size": 1283,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "readme.txt",
-			"settings":
-			{
-				"buffer_size": 0,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "models/container.py",
-			"settings":
-			{
-				"buffer_size": 3011,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "views/container.xml",
-			"settings":
-			{
-				"buffer_size": 5594,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "models/slot.py",
-			"settings":
-			{
-				"buffer_size": 2622,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "views/slot.xml",
-			"settings":
-			{
-				"buffer_size": 10816,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "models/appointment.py",
-			"settings":
-			{
-				"buffer_size": 851,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "models/doctor.py",
-			"settings":
-			{
-				"buffer_size": 175,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "views/doctor.xml",
-			"settings":
-			{
-				"buffer_size": 1478,
+				"buffer_size": 1494,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -603,15 +532,92 @@
 			"file": "views/menus.xml",
 			"settings":
 			{
-				"buffer_size": 641,
+				"buffer_size": 786,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "views/patient.xml",
+			"file": "models/appointment.py",
 			"settings":
 			{
-				"buffer_size": 1439,
+				"buffer_size": 2843,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "views/appointment.xml",
+			"settings":
+			{
+				"buffer_size": 3906,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "views/app_calendar.xml",
+			"settings":
+			{
+				"buffer_size": 3542,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "views/app_search.xml",
+			"settings":
+			{
+				"buffer_size": 894,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "views/slot_actions.xml",
+			"settings":
+			{
+				"buffer_size": 6709,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "views/slot.xml",
+			"settings":
+			{
+				"buffer_size": 5229,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "models/container.py",
+			"settings":
+			{
+				"buffer_size": 4298,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "models/slot.py",
+			"settings":
+			{
+				"buffer_size": 3471,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "models/app_funcs.py",
+			"settings":
+			{
+				"buffer_size": 429,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "models/appointment.TRASH.py",
+			"settings":
+			{
+				"buffer_size": 853,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -690,20 +696,43 @@
 	},
 	"file_history":
 	[
+		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/slot.xml",
+		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/app_calendar.TRASH.xml",
+		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/oehealth/oeh_medical/oeh_medical.py",
+		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/doctor.xml",
+		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/container.xml",
+		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/slot_actions.xml",
+		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/container.py",
+		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/oeh_patient.py",
+		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/__init__.py",
+		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/readme.txt",
+		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/menus.xml",
+		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/patient.py",
+		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/slot.py",
+		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/appointment.TRASH.py",
+		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/slot.TRASH.py",
+		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/color_field.py",
+		"/Users/gibil/cellar/bitbucket/web_calendar/readme.txt",
+		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/data/doctors.xml",
+		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/doctor.py",
+		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/appointment.py",
+		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/patient.xml",
+		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/container.TRASH.xml",
+		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/slot.TRASH.xml",
+		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/wizard/__init__.py",
+		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/__init__.py",
+		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/security/ir.model.access.csv",
+		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/views.xml",
+		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/security/buff.csv",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/appointment.xml",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/matrix.py",
-		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/container.TRASH.xml",
-		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/doctor.xml",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/matrix.xml",
-		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/slot.TRASH.xml",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/agenda.xml",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/agenda.py",
-		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/slot.TRASH.py",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/board/static/src/xml/board.xml",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/board/board_view.xml",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/board/views/board.xml",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/board/static/src/less/dashboard.less",
-		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/__init__.py",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/wizard/my_wizard.py",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/wizard/wizard.xml",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/matrix.TRASH.py",
@@ -711,18 +740,9 @@
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/project.py",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/user.py",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/task.xml",
-		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/container.py",
-		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/appointment.py",
-		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/patient.py",
-		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/menus.xml",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/menus.TRASH.xml",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/project.xml",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/user.xml",
-		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/wizard/__init__.py",
-		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/__init__.py",
-		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/container.xml",
-		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/slot.xml",
-		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/slot.py",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/container.TRASH.py",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/task.TRASH.py",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/x2m_demo.xml",
@@ -731,10 +751,7 @@
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/x2m_demo.py",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/doctor.pyc",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/static/src/css/jx.css",
-		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/security/ir.model.access.csv",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/templates.xml",
-		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/doctor.py",
-		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/patient.xml",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/wizard.xml",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/my_wizard.py",
 		"/Users/gibil/cellar/github/oca/web/web_widget_x2many_2d_matrix_example/models/x2m_demo.py",
@@ -746,9 +763,7 @@
 		"/Users/gibil/cellar/github/oca/web/web_widget_x2many_2d_matrix_example/static/description/icon.png",
 		"/Users/gibil/cellar/github/oca/web/web_widget_x2many_2d_matrix_example/models/__init__.py",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/matrix_graph.xml",
-		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/oehealth/oeh_medical/oeh_medical.py",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/oehealth/views/oehealth.xml",
-		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/views.xml",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/models.py",
 		"/Users/gibil/cellar/github/price_list/models/treatment/test_treatment.py",
 		"/Users/gibil/cellar/github/price_list/views/treatment/treatment.xml",
@@ -808,20 +823,11 @@
 		"/Users/gibil/cellar/github/price_list/models/electronic/pl_export.py",
 		"/Users/gibil/cellar/github/price_list/views/configurator_emr.xml",
 		"/Users/gibil/cellar/github/price_list/views/treatment/treatment.TRASH.cml",
-		"/Users/gibil/cellar/github/price_list/models/treatment/tre_exc.py",
-		"/Users/gibil/cellar/github/price_list/models/patient/pat_exc.py",
-		"/Users/gibil/cellar/github/price_list/models/order/order.TRASH.py",
-		"/Users/gibil/cellar/github/price_list/models/electronic/pl_lib_exp.TRASH.py",
-		"/Users/gibil/cellar/github/price_list/views/configurator_emr.TRASH.xml",
-		"/Users/gibil/cellar/github/price_list/models/electronic/electronic_container.TRASH.py",
-		"/Users/gibil/cellar/github/price_list/models/management/mgt_funcs.py",
-		"/Users/gibil/cellar/github/price_list/views/wizard.xml",
-		"/Users/gibil/cellar/github/price_list/views/matrix.xml",
-		"/Users/gibil/cellar/github/price_list/views/menus/menus_dev.xml"
+		"/Users/gibil/cellar/github/price_list/models/treatment/tre_exc.py"
 	],
 	"find":
 	{
-		"height": 25.0
+		"height": 37.0
 	},
 	"find_in_files":
 	{
@@ -835,6 +841,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"lima",
+			"medical.appointment",
+			"color",
+			"appointment",
+			" x",
+			"chavarri",
+			"patient",
 			"update",
 			"chavarri",
 			"1-1-1",
@@ -869,6 +882,13 @@
 		"regex": false,
 		"replace_history":
 		[
+			"tacna",
+			"",
+			"escudero",
+			"gonzales",
+			"monteverde",
+			"abriojo",
+			"canales",
 			"escudero",
 			"monteverde",
 			"gonzales",
@@ -915,7 +935,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -924,15 +944,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1283,
+						"buffer_size": 1494,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								333,
-								333
+								1096,
+								1096
 							]
 						],
 						"settings":
@@ -942,19 +962,19 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 750.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "readme.txt",
+					"file": "views/menus.xml",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 786,
 						"regions":
 						{
 						},
@@ -967,30 +987,31 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/XML/XML.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 223.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "models/container.py",
+					"file": "models/appointment.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3011,
+						"buffer_size": 2843,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1829,
-								1829
+								1540,
+								1540
 							]
 						],
 						"settings":
@@ -999,27 +1020,56 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1176.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "views/container.xml",
+					"file": "views/appointment.xml",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5594,
+						"buffer_size": 3906,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3391,
-								3391
+								3397,
+								3397
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1190.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "views/app_calendar.xml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3542,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3518,
+								3518
 							]
 						],
 						"settings":
@@ -1029,56 +1079,57 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1765.0,
+						"translation.y": 1158.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "models/slot.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2622,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1707,
-								1707
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1355.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
 					"buffer": 5,
-					"file": "views/slot.xml",
+					"file": "views/app_search.xml",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 10816,
+						"buffer_size": 894,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								607,
-								607
+								455,
+								455
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "views/slot_actions.xml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6709,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1087,27 +1138,56 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 94.0,
+						"translation.y": 4764.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "models/appointment.py",
+					"buffer": 7,
+					"file": "views/slot.xml",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 851,
+						"buffer_size": 5229,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								449,
-								849
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "models/container.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4298,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1478,
+								1628
 							]
 						],
 						"settings":
@@ -1116,27 +1196,56 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 92.0,
+						"translation.y": 1260.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
-					"file": "models/doctor.py",
+					"buffer": 9,
+					"file": "models/slot.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 175,
+						"buffer_size": 3471,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								172,
-								172
+								1299,
+								1299
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2770.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "models/app_funcs.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 429,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								25,
+								25
 							]
 						],
 						"settings":
@@ -1147,96 +1256,36 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
-					"file": "views/doctor.xml",
+					"buffer": 11,
+					"file": "models/appointment.TRASH.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1478,
+						"buffer_size": 853,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								411,
-								411
+								50,
+								50
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/XML/XML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "views/menus.xml",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 641,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								476,
-								476
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/XML/XML.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 67.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "views/patient.xml",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1439,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1305,
-								1305
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/XML/XML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 424.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
+					"stack_index": 8,
 					"type": "text"
 				}
 			]
@@ -1469,7 +1518,7 @@
 		[
 			[
 				"",
-				"~/cellar/github/price_list/PriceList.sublime-project"
+				"~/cellar/bitbucket/web_calendar/WebCalendar.sublime-project"
 			],
 			[
 				"\t",

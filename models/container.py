@@ -10,6 +10,48 @@ class Container(models.Model):
 
 
 
+# ----------------------------------------------- Calendar --------------------------------
+
+	date_stop = fields.Datetime()
+
+
+
+
+# ----------------------------------------------- Fields --------------------------------
+
+	doctor_0 = fields.Boolean(
+			'Dr. Chavarri',
+			default=True,
+		)
+	
+	doctor_1 = fields.Boolean(
+			'Dr. Canales',
+			default=True,
+		)
+
+	doctor_2 = fields.Boolean(
+			'Dr. Abriojo',
+			default=True,
+		)
+
+
+
+	doctor_3 = fields.Boolean(
+			'Dr. Monteverde',
+			default=True,
+		)
+
+	doctor_4 = fields.Boolean(
+			'Dr. Gonzales',
+			default=True,
+		)
+
+	doctor_5 = fields.Boolean(
+			'Dr. Escudero',
+			default=True,
+		)
+
+
 # ----------------------------------------------- Relational --------------------------------
 
 	slot_0_ids = fields.One2many(
@@ -26,7 +68,6 @@ class Container(models.Model):
 									'matrix.slot', 
 									'container_2_id',
 							)
-
 
 	slot_3_ids = fields.One2many(
 									'matrix.slot', 
@@ -86,21 +127,16 @@ class Container(models.Model):
 
 		for slot in self.slot_ids:
 			
-			#if slot.doctor.name in ['Dr. Chavarri']:
-
-
-
 			for idx in idx_arr:
 	
+				#if slot.doctor.name in ['Dr. Chavarri']:
 				if slot.doctor.idx in [idx]:
-					print(slot.doctor.name)
+					#print(slot.doctor.name)
 
 					#obj = self.slot_0_ids.create({
 					obj = _slot_handle[idx].create({
 														'doctor': slot.doctor.id,
 														'date_start': slot.date_start,
-
-														#'container_0_id': self.id,
 														_container_id[idx]: self.id,
 							})
 
@@ -134,30 +170,31 @@ class Container(models.Model):
 					16, 16.5, 17, 17.5, 18, 18.5,
 					17, 17.5, 18, 18.5, 19, 19.5, 
 					20, 20.5, 21, 21.5, 
-					#22,
 				]
 
 		# Doctors
-		#doctors = self.env['matrix.doctor'].browse([1, 2, 3])
-		doctors = self.env['matrix.doctor'].browse([1, 2, 3, 4, 5, 6])
+		doctors = self.env['matrix.doctor'].search([
+															('active', 'in', [True]),
+											],
+												#order='x_serial_nr asc',
+												#limit=1,
+											)
 		print(doctors)
+
+
 
 		return [
 				(0, 0, {
-							#'date': self.date,
 							'date_start': s,
-							#'name': d.id, 
-							'doctor': d.id, 
+							'doctor': d.id,
 				})
 				for d in doctors
 				for s in slots
 		]
 
-
 	slot_ids = fields.One2many(
 								'matrix.slot', 
 								'container_id',
-								#string='slot_ids',
 								default=_default_slot_ids,
 							)
 
@@ -166,4 +203,40 @@ class Container(models.Model):
 
 
 
+	# Apps
+	def _default_app_ids(self):
+		print()
+		print('Default App Ids')
+
+		# Slots
+		slots = [	9, 9.5, 10, 10.5, 11, 11.5, 
+					12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 
+					16, 16.5, 17, 17.5, 18, 18.5,
+					17, 17.5, 18, 18.5, 19, 19.5, 
+					20, 20.5, 21, 21.5, 
+				]
+
+		# Doctors
+		doctors = self.env['matrix.doctor'].search([
+															('active', 'in', [True]),
+											],
+												#order='x_serial_nr asc',
+												#limit=1,
+											)
+		print(doctors)
+
+		return [
+				(0, 0, {
+							'date_start': s,
+							'doctor': d.id,
+				})
+				for d in doctors
+				for s in slots
+		]
+
+	app_ids = fields.One2many(
+								'matrix.appointment', 
+								'container_id',
+								default=_default_app_ids,
+							)
 

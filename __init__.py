@@ -4,7 +4,6 @@ from . import controllers
 
 from . import models
 
-
 # jx
-from . import wizard
+#from . import wizard
 

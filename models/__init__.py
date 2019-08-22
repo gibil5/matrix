@@ -3,19 +3,25 @@
 #from . import models
 
 
-from . import patient
+#from . import color_field
+
+from . import oeh_patient
+
+
 from . import appointment
-from . import container
-from . import slot
 
+from . import patient
 from . import doctor
-from . import agenda
+from . import slot
+from . import container
+
+#from . import agenda
 
 
-from . import user
-from . import project
-from . import task
-from . import matrix
+#from . import user
+#from . import project
+#from . import task
+#from . import matrix
 
 
 

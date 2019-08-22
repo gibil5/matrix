@@ -1,3 +1,77 @@
+<!--
+orange:slot_type=='consultation';
+blue:slot_type=='procedure';
+green:slot_type=='control'
+-->
+
+
+
+
+
+<tree
+colors="
+blue:state=='scheduled';
+red:state=='pre_scheduled'
+"
+>
+            <!-- Hot Button -->
+            <button 
+                type="object" 
+                class="oe_highlight"    
+                name="open_line_current" 
+                string="ENT"
+            />
+
+            <field name="date_start"        widget="float_time"/>
+            <field name="patient"/>
+            <field name="slot_type"/>
+            <field name="state"/>
+        </tree>
+    </field>
+
+
+
+
+<!--
+        <tree>
+            <button 
+                type="object" 
+                class="oe_highlight"    
+                name="open_line_current" 
+                string="ENT"
+            />
+            <field name="date_start"        widget="float_time"/>
+            <field name="patient"/>
+            <field name="slot_type"/>
+            <field name="state"/>
+        </tree>
+    </field>
+-->
+
+
+
+<!--
+        <tree>
+            <button 
+                type="object" 
+                class="oe_highlight"    
+                name="open_line_current" 
+                string="ENT"
+            />
+            <field name="date_start"        widget="float_time"/>
+            <field name="patient"/>
+            <field name="slot_type"/>
+            <field name="state"/>
+        </tree>
+    </field>
+-->
+
+
+
+
+
+
+
 
         <field name="doctor_cha"/>
         <field name="doctor_can"/>

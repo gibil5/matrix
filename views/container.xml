@@ -26,6 +26,8 @@
 
 
                     <sheet>
+
+                        <group>
                         <group>
                             <field name="date"/>
 <!--
@@ -33,107 +35,66 @@
 -->
                         </group>
 
+                        <group>
+                            <field name="doctor_0"/>
+                            <field name="doctor_1"/>
+                            <field name="doctor_2"/>
+
+                            <field name="doctor_3"/>
+                            <field name="doctor_4"/>
+                            <field name="doctor_5"/>
+                        </group>
+                    </group>
+
+
+
+<notebook>
+<page   string="Citas">
+<field name="app_ids"/>
+<!--
+    <tree>
+        <field name="date_start"        widget="float_time"/>
+        <field name="doctor"/>
+        <field name="patient"/>
+    </tree>
+</field>
+-->
+</page>
+</notebook>
+
+
+
 <notebook>
 
-<page string="Dr. Chavarri">
-    <field name="slot_0_ids">
-        <tree>
 
-            <!-- Hot Button -->
-            <button 
-                type="object" 
-                class="oe_highlight"    
-                name="open_line_current" 
-                string="ENT"
-            />
-
-            <field name="date_start"        widget="float_time"/>
-            <field name="patient"/>
-        </tree>
-    </field>
+<!-- Doctors -->
+<page string="Dr. Chavarri"        attrs="{'invisible':[('doctor_0', 'in', [False])]}">
+    <field name="slot_0_ids"/>
 </page>
 
-<page string="Dr. Canales">
-    <field name="slot_1_ids">
-        <tree>
-            <!-- Hot Button -->
-            <button 
-                type="object" 
-                class="oe_highlight"    
-                name="open_line_current" 
-                string="ENT"
-            />
-            <field name="date_start"        widget="float_time"/>
-            <field name="patient"/>
-        </tree>
-    </field>
+<page string="Dr. Canales"        attrs="{'invisible':[('doctor_1', 'in', [False])]}">
+    <field name="slot_1_ids"/>
 </page>
 
-<page string="Dr. Abriojo">
-    <field name="slot_2_ids">
-        <tree>
-            <!-- Hot Button -->
-            <button 
-                type="object" 
-                class="oe_highlight"    
-                name="open_line_current" 
-                string="ENT"
-            />
-            <field name="date_start"        widget="float_time"/>
-            <field name="patient"/>
-        </tree>
-    </field>
+<page string="Dr. Abriojo"        attrs="{'invisible':[('doctor_2', 'in', [False])]}">
+    <field name="slot_2_ids"/>
+</page>
+
+<page string="Dr. Monteverde"        attrs="{'invisible':[('doctor_3', 'in', [False])]}">
+    <field name="slot_3_ids"/>
+</page>
+
+<page string="Dr. Gonzales"        attrs="{'invisible':[('doctor_4', 'in', [False])]}">
+    <field name="slot_4_ids"/>
+</page>
+
+<page string="Dr. Escudero"        attrs="{'invisible':[('doctor_5', 'in', [False])]}">
+    <field name="slot_5_ids"/>
 </page>
 
 
 
-<page string="Dr. Monteverde">
-    <field name="slot_3_ids">
-        <tree>
-            <!-- Hot Button -->
-            <button 
-                type="object" 
-                class="oe_highlight"    
-                name="open_line_current" 
-                string="ENT"
-            />
-            <field name="date_start"        widget="float_time"/>
-            <field name="patient"/>
-        </tree>
-    </field>
-</page>
 
-<page string="Dr. Gonzales">
-    <field name="slot_4_ids">
-        <tree>
-            <!-- Hot Button -->
-            <button 
-                type="object" 
-                class="oe_highlight"    
-                name="open_line_current" 
-                string="ENT"
-            />
-            <field name="date_start"        widget="float_time"/>
-            <field name="patient"/>
-        </tree>
-    </field>
-</page>
-
-<page string="Dr. Escudero">
-    <field name="slot_5_ids">
-        <tree>
-            <!-- Hot Button -->
-            <button 
-                type="object" 
-                class="oe_highlight"    
-                name="open_line_current" 
-                string="ENT"
-            />
-            <field name="date_start"        widget="float_time"/>
-            <field name="patient"/>
-        </tree>
-    </field>
-</page>
 
 
 <page string="All">
@@ -160,6 +121,8 @@
 </page>
 </notebook>
 -->
+
+
 
                     </sheet>
 
@@ -223,17 +186,14 @@
 
 <!-- MENUS -->
         <!-- container --> 
+<!--        
         <menuitem   id="dev_container_all_menu"
-            
                     parent="parent_app_menu"
-
                     sequence="0"
-
-                    name="Dias"
-                    
+                    name="Dias"                 
                     action="container_all_tree_action"
                 />
-
+-->
 
 	</data>
 </openerp>

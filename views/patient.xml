@@ -56,6 +56,7 @@
 
 <!-- MENUS -->
         <!-- patient --> 
+<!--        
         <menuitem   id="dev_patient_all_menu"
                     parent="parent_config_menu"
 
@@ -64,7 +65,7 @@
                     name='Pacientes'
                     action="patient_all_tree_action"
                 />
-
+-->
 
 	</data>
 </openerp>

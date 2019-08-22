@@ -1,3 +1,22 @@
+<!--								
+						        <field name="container_id"/>
+
+						        <field name="container_0_id"/>
+						        <field name="container_1_id"/>
+						        <field name="container_2_id"/>
+						        <field name="container_3_id"/>
+						        <field name="container_4_id"/>
+						        <field name="container_5_id"/>
+-->
+
+
+
+
+
+
+
+
+
 						<group	col="3">
 							<group>
 								<field name="doctor_cha"/>

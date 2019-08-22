@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+
+
+
+<!-- FILTER --> 
+        <record id="view_app_filter" model="ir.ui.view">
+           <field name="name">App Search</field>
+
+           <field name="model">matrix.appointment</field> 
+
+           <field name="arch" type="xml">
+
+               <search string="appointments">
+
+                <field  name="patient"
+
+                        filter_domain="['|',('patient','ilike',self),('dni_pre','ilike',self)]"
+
+                	/>
+
+
+                    <!-- Group By --> 
+                    <group expand="1" string="Group By">
+                        <filter name="Tipo" context="{'group_by':'patient'}"/>
+                    </group>
+               </search>
+           </field>
+       </record>
+<!--
+                        filter_domain="['|',('name','ilike',self),('default_code','ilike',self)]"
+-->
+
+
+    </data>
+</openerp>
