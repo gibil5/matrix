@@ -19,9 +19,7 @@
 						<button 
 								type="object" 
 								class="oe_highlight"
-
 								name="update"
-
 								string="Actualizar"                               
 						/>
 
@@ -29,9 +27,7 @@
 						<button 
 								type="object" 
 								class="oe_highlight oe_right"
-
 								name="remove_myself"
-
 								string="Eliminar"                               
 						/>
 					</header>
@@ -43,7 +39,6 @@
 <!--
 								<field name="date_start"      widget="float_time"   />
 -->
-
 								<field name="patient_pre"		
 															attrs="{
 																				'required':[('patient', 'in', [False]),],
@@ -69,7 +64,11 @@
 
 							<group>
 								<field name="doctor"		required="1"/>
+
 								<field name="date_start"	required="1"/>
+
+								<field name="delta_min"		required="1"/>
+
 <!--	
 								<field name="x_display"/>
 								<field name="date_stop"		required="1"/>
@@ -102,10 +101,18 @@
 -->
 					<field name="date_start"/>
 
+					<field name="delta_min"/>
+
+
+
 					<field name="patient_pre"/>
 				
 					<field name="patient"/>
 					
+					<field name="dni_pre"/>
+
+
+
 					<field name="doctor"/>
 
 					<field name="app_type"/>
@@ -127,7 +134,7 @@
 		<!-- appointment -->
 		<record model="ir.actions.act_window" id="appointment_all_tree_action">
 
-			<field name="name">appointment Tree Action</field>
+			<field name="name">Citas 2019_Lima</field>
 			
 			<field name="res_model">matrix.appointment</field>
 			
@@ -209,8 +216,6 @@
 					action="appointment_action_calendar"
 				/>
 -->
-
-
 
 
 	</data>

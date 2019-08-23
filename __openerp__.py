@@ -27,7 +27,8 @@
     # any module necessary for this one to work correctly
     #'depends': ['base'],
     #'depends': ['base', 'oehealth'],
-    'depends': ['base', 'openhealth'],
+    #'depends': ['base', 'oehealth', 'openhealth'],
+    'depends': ['base', 'openhealth', 'price_list'],
 
 
     # always loaded
@@ -51,7 +52,9 @@
 
 
 
+        #'views/menus_dep.xml',     # Dep 
         'views/menus.xml',
+
 
 
         #'wizard/wizard.xml',

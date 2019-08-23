@@ -3,7 +3,12 @@
     <data>
 
 
+<!--
+                        filter_domain="['|',('patient','ilike',self),('dni_pre','ilike',self)]"
 
+
+                        filter_domain="['|',('patient','ilike',self),('dni_pre','ilike',self)]"
+-->
 <!-- FILTER --> 
         <record id="view_app_filter" model="ir.ui.view">
            <field name="name">App Search</field>
@@ -16,7 +21,7 @@
 
                 <field  name="patient"
 
-                        filter_domain="['|',('patient','ilike',self),('dni_pre','ilike',self)]"
+                        filter_domain="['|','|',('patient','ilike',self),('dni_pre','ilike',self),('patient_pre','ilike',self) ]"
 
                 	/>
 

@@ -10,7 +10,7 @@ from openerp import models, fields, api
 
 class Patient(models.Model):
 	"""
-	high level support for doing this and that.
+	Patient Class. Inherited from OeHealth.
 	"""
 	_inherit = 'oeh.medical.patient'
 

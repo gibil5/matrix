@@ -24,9 +24,7 @@ class Appointment(models.Model):
 	def remove_myself(self):
 		print()
 		print('Remove Myself')
-
 		rec_set = self.env['matrix.appointment'].browse([self.id])
-
 		ret = rec_set.unlink()
 
 
@@ -37,7 +35,6 @@ class Appointment(models.Model):
 	def update(self):
 		print()
 		print('Update')
-
 		if self.patient.name not in [False]:
 			self.patient_pre = self.patient.name
 			if self.patient.x_id_doc not in [False]:				
@@ -76,18 +73,31 @@ class Appointment(models.Model):
 	#@api.depends('patient')
 	def _compute_date_stop(self):
 		for record in self:
-			record.date_stop = app_funcs.time_delta(record, record.date_start, 30)
+			#record.date_stop = app_funcs.time_delta(record, record.date_start, 30)
+			record.date_stop = app_funcs.time_delta(record, record.date_start, record.delta_min)
 
 
-	date_delay = fields.Float(
-			compute='_compute_date_delay',			
+
+	delta_min = fields.Selection(
+			[
+				(30, '30 min'),
+				(15, '15 min'),
+			],
+			string='Duracion',
 		)
 
-	@api.multi
+
+
+	#date_delay = fields.Float(
+	#		compute='_compute_date_delay',
+	#	)
+
+	#@api.multi
 	#@api.depends('patient')
-	def _compute_date_delay(self):
-		for record in self:
-			record.date_delay = 0.5
+	#def _compute_date_delay(self):
+	#	for record in self:
+	#		record.date_delay = 0.5
+
 
 
 	x_display = fields.Char(

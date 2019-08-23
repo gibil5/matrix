@@ -1,48 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <openerp>
-    <data>
+	<data>
 
 <!--
-                            display="[display]" 
+							display="[display]" 
+
+							date_delay="date_delay"
 -->
 
 <!-- CALENDAR -->
-        <record model="ir.ui.view" id="view_appointment_calendar">
-            <field name="name">matrix.appointment.calendar</field>
-            <field name="model">matrix.appointment</field>
-            <field name="arch" type="xml">
+		<record model="ir.ui.view" id="view_appointment_calendar">
+			<field name="name">matrix.appointment.calendar</field>
+			<field name="model">matrix.appointment</field>
+			<field name="arch" type="xml">
 
-                <calendar   string="Appointments" 
+				<calendar   string="Appointments" 
 
-                            date_start="date_start" 
+							date_start="date_start" 
 
-                            date_stop="date_stop" 
-
-                            date_delay="date_delay"
-
-                            display="[x_display]" 
-
-                            color="state" 
-
-                            quick_add="False" 
-
-                            mode="day">
+							date_stop="date_stop" 
 
 
-                        <!--<field name="user_id"/>-->
-                        
-                        <field name="x_display"/>
+							display="[x_display]" 
+
+							color="state" 
+
+							quick_add="False" 
+
+							mode="day">
+
+
+						<!--<field name="user_id"/>-->
+						
+						<field name="x_display"/>
 <!--                        
-                        <field name="doctor"/>
-                        <field name="patient"/>
+						<field name="doctor"/>
+						<field name="patient"/>
 
-                        <field name="patient_status"/>
-                        <field name="x_patient_name_short"/>
-                        <field name="x_doctor_code"/>
+						<field name="patient_status"/>
+						<field name="x_patient_name_short"/>
+						<field name="x_doctor_code"/>
 -->
-                </calendar>
-            </field>
-        </record>
+				</calendar>
+			</field>
+		</record>
 
 
 
@@ -51,59 +52,59 @@
 Tags
 2019_08_21_Lima
 -->
-        <record id="appointment_action_calendar" model="ir.actions.act_window">
+		<record id="appointment_action_calendar" model="ir.actions.act_window">
 
-                    <field name="name">Citas</field>
+					<field name="name">Citas</field>
 
-                    <field name="res_model">matrix.appointment</field>
-                    <field name="view_type">form</field>
-                    <field name="view_mode">calendar,tree,form</field>
-                    <field name="view_id" eval="False"/>
-                    <field name="domain">[]
-                    </field>
-                    <field name="context">{
-                                              'default_date_delay': '0.5',
-                        }</field>
-        </record>
+					<field name="res_model">matrix.appointment</field>
+					<field name="view_type">form</field>
+					<field name="view_mode">calendar,tree,form</field>
+					<field name="view_id" eval="False"/>
+					<field name="domain">[]
+					</field>
+					<field name="context">{
+											  'default_date_delay': '0.5',
+						}</field>
+		</record>
 
 
 <!--
-                                              'default_date_delay': '0.5',
-                    <field name="name">Citas 2019_08_21_Lima</field>
-                    <field name="name">Citas 2019_08_21_Tacna</field>
+											  'default_date_delay': '0.5',
+					<field name="name">Citas 2019_08_21_Lima</field>
+					<field name="name">Citas 2019_08_21_Tacna</field>
 -->
-        <record id="app_action_calendar_2019_08_21_lima" model="ir.actions.act_window">
+		<record id="app_action_calendar_2019_08_21_lima" model="ir.actions.act_window">
 
-                    <field name="name">Citas 2019_Lima</field>
+					<field name="name">Citas 2019_Lima</field>
 
-                    <field name="res_model">matrix.appointment</field>
-                    <field name="view_type">form</field>
-                    <field name="view_mode">calendar,tree,form</field>
-                    <field name="view_id" eval="False"/>
-                    <field name="domain">[]
-                    </field>
-                    <field name="context">{
-                                              'default_state': 'pre_scheduled',
-                        }</field>
-        </record>
-
-
-        <record id="app_action_calendar_2019_08_21_tacna" model="ir.actions.act_window">
-
-                    <field name="name">Citas 2019_Tacna</field>
-
-                    <field name="res_model">matrix.appointment</field>
-                    <field name="view_type">form</field>
-                    <field name="view_mode">calendar,tree,form</field>
-                    <field name="view_id" eval="False"/>
-                    <field name="domain">[]
-                    </field>
-                    <field name="context">{
-                                              'default_date_delay': '0.5',
-                        }</field>
-        </record>
+					<field name="res_model">matrix.appointment</field>
+					<field name="view_type">form</field>
+					<field name="view_mode">calendar,tree,form</field>
+					<field name="view_id" eval="False"/>
+					<field name="domain">[]
+					</field>
+					<field name="context">{
+											  'default_state': 'pre_scheduled',
+						}</field>
+		</record>
 
 
+		<record id="app_action_calendar_2019_08_21_tacna" model="ir.actions.act_window">
 
-    </data>
+					<field name="name">Citas 2019_Tacna</field>
+
+					<field name="res_model">matrix.appointment</field>
+					<field name="view_type">form</field>
+					<field name="view_mode">calendar,tree,form</field>
+					<field name="view_id" eval="False"/>
+					<field name="domain">[]
+					</field>
+					<field name="context">{
+											  'default_date_delay': '0.5',
+						}</field>
+		</record>
+
+
+
+	</data>
 </openerp>
