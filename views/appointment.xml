@@ -39,6 +39,16 @@
 <!--
 								<field name="date_start"      widget="float_time"   />
 -->
+
+								<field name="patient"		
+															attrs="{
+																				'required':[('patient_pre', 'in', [False]),],
+																		}"  
+
+									/>
+
+								<field name="vspace"/>
+
 								<field name="patient_pre"		
 															attrs="{
 																				'required':[('patient', 'in', [False]),],
@@ -50,12 +60,6 @@
 
 								<field name="vspace"/>
 
-								<field name="patient"		
-															attrs="{
-																				'required':[('patient_pre', 'in', [False]),],
-																		}"  
-
-									/>
 
 								<field name="state"		required="1"/>
 								<field name="app_type"	required="1"/>
