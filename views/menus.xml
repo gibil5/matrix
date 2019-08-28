@@ -43,12 +43,13 @@
 
 
 		<!-- Dev --> 
+<!--		
 		<menuitem   id="parent_dev_menu" 
 							name="DEV"
 							parent="main_app_menu"
 							sequence="13"
 						/>
-
+-->
 
 	</data>
 </openerp>

@@ -29,16 +29,13 @@
 
 
 		<!-- user --> 
+<!--        
 		<menuitem   id="dev_user_all_menu"
-
 					parent="parent_dev_menu"
-			
 					sequence="7"
-
 					action="user_all_tree_action"
 				/>
-
-
+-->
 
 
 	</data>

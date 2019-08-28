@@ -529,29 +529,19 @@
 			}
 		},
 		{
-			"file": "readme.txt",
+			"file": "models/slot.py",
 			"settings":
 			{
-				"buffer_size": 57,
+				"buffer_size": 3430,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "models/oeh_patient.py",
+			"file": "models/matrix.py",
 			"settings":
 			{
-				"buffer_size": 1463,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "views/patient_personal.xml",
-			"settings":
-			{
-				"buffer_size": 5373,
-				"encoding": "UTF-8",
+				"buffer_size": 1497,
 				"line_ending": "Unix"
 			}
 		},
@@ -559,7 +549,52 @@
 			"file": "views/menus.xml",
 			"settings":
 			{
-				"buffer_size": 786,
+				"buffer_size": 796,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "views/user.xml",
+			"settings":
+			{
+				"buffer_size": 823,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "views/project.xml",
+			"settings":
+			{
+				"buffer_size": 846,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wizard/wizard.xml",
+			"settings":
+			{
+				"buffer_size": 1661,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "views/matrix.xml",
+			"settings":
+			{
+				"buffer_size": 2436,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "models/container.py",
+			"settings":
+			{
+				"buffer_size": 4298,
 				"line_ending": "Unix"
 			}
 		},
@@ -568,15 +603,6 @@
 			"settings":
 			{
 				"buffer_size": 3458,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "views/appointment.xml",
-			"settings":
-			{
-				"buffer_size": 4055,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -681,6 +707,12 @@
 	},
 	"file_history":
 	[
+		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/menus.xml",
+		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/patient_personal.xml",
+		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/oeh_patient.py",
+		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/readme.txt",
+		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/appointment.xml",
+		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/data/doctors.xml",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/menus_dep.xml",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/hr/__init__.py",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/slot_actions.xml",
@@ -695,24 +727,19 @@
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/hr/__openerp__.py",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/hr/views/hr.xml",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/appointment.py",
-		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/data/doctors.xml",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/oeh_patient.TRASH.xml",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/oeh_patient.xml",
-		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/appointment.xml",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/container.xml",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/app_calendar.xml",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/slot.py",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/appointment.TRASH.py",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/app_funcs.py",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/app_search.xml",
-		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/readme.txt",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/patient.py",
-		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/menus.xml",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/security/ir.model.access.csv",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/app_calendar.TRASH.xml",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/oehealth/oeh_medical/oeh_medical.py",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/doctor.xml",
-		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/oeh_patient.py",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/__init__.py",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/slot.TRASH.py",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/color_field.py",
@@ -807,8 +834,7 @@
 		"/Users/gibil/cellar/github/price_list/models/patient/patient.TRASH.py",
 		"/Users/gibil/cellar/github/price_list/models/management/exc_mgt.py",
 		"/Users/gibil/cellar/github/price_list/views/patient/patient_personal.xml",
-		"/Users/gibil/cellar/github/price_list/views/patient/patient.xml",
-		"/Users/gibil/cellar/github/price_list/models/order/order.py"
+		"/Users/gibil/cellar/github/price_list/views/patient/patient.xml"
 	],
 	"find":
 	{
@@ -945,8 +971,8 @@
 						"selection":
 						[
 							[
-								1142,
-								1142
+								416,
+								416
 							]
 						],
 						"settings":
@@ -956,7 +982,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 170.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -964,24 +990,25 @@
 				},
 				{
 					"buffer": 1,
-					"file": "readme.txt",
+					"file": "models/slot.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 57,
+						"buffer_size": 3430,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								57,
-								57
+								1259,
+								1259
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -992,19 +1019,19 @@
 				},
 				{
 					"buffer": 2,
-					"file": "models/oeh_patient.py",
+					"file": "models/matrix.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1463,
+						"buffer_size": 1497,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								247,
-								247
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1016,24 +1043,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "views/patient_personal.xml",
+					"file": "views/menus.xml",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5373,
+						"buffer_size": 796,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								221,
-								221
+								774,
+								774
 							]
 						],
 						"settings":
@@ -1042,43 +1069,161 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 3266.0,
+						"translation.y": 238.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "views/menus.xml",
+					"file": "views/user.xml",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 786,
+						"buffer_size": 823,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								279,
-								279
+								796,
+								796
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/XML/XML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 34.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "views/project.xml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 846,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								825,
+								825
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "wizard/wizard.xml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1661,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1639,
+								1639
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 646.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "views/matrix.xml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2436,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2412,
+								2412
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "models/container.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4298,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2879,
+								2879
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 9,
 					"file": "models/appointment.py",
 					"semi_transient": false,
 					"settings":
@@ -1090,8 +1235,8 @@
 						"selection":
 						[
 							[
-								2002,
-								2002
+								1755,
+								1806
 							]
 						],
 						"settings":
@@ -1100,43 +1245,14 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 623.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "views/appointment.xml",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4055,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2293,
-								2293
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/XML/XML.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1487.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
+					"buffer": 10,
 					"file": "views/app_calendar.xml",
 					"semi_transient": false,
 					"settings":
@@ -1162,11 +1278,11 @@
 						"translation.y": 780.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 11,
 					"file": "views/app_search.xml",
 					"semi_transient": false,
 					"settings":
@@ -1192,11 +1308,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 12,
 					"file": "views/oeh_patient.xml",
 					"semi_transient": false,
 					"settings":
@@ -1222,7 +1338,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 12,
 					"type": "text"
 				}
 			]
@@ -1230,7 +1346,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 25.0
+		"height": 36.0
 	},
 	"input":
 	{
@@ -1455,7 +1571,7 @@
 		[
 			[
 				"",
-				"~/cellar/bitbucket/web_calendar/WebCalendar.sublime-project"
+				"~/cellar/github/price_list/PriceList.sublime-project"
 			],
 			[
 				"\t",

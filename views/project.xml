@@ -27,6 +27,7 @@
         </record>
 
 		<!-- Project --> 
+<!--        
 		<menuitem   id="dev_project_all_menu"
 
 					parent="parent_dev_menu"
@@ -35,6 +36,6 @@
 
 					action="project_all_tree_action"
 				/>
-
+-->
 	</data>
 </openerp>

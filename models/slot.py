@@ -13,6 +13,14 @@ class Slot(models.Model):
 
 
 
+# ----------------------------------------------- Dep --------------------------------
+	#color_field = fields.Many2one(
+	#		'matrix.color_field'
+			#default='blue',
+	#	)
+
+
+
 # ----------------------------------------------- Appointments --------------------------------
 
 	# Appointment
@@ -21,20 +29,9 @@ class Slot(models.Model):
 			#'oeh.medical.appointment',
 			'Cita',
 		)
-
-
-
 # ----------------------------------------------- Calendar --------------------------------
 
 	date_stop = fields.Datetime()
-
-	#color_field = fields.Char(
-	color_field = fields.Many2one(
-			'matrix.color_field'
-			#default='blue',
-		)
-
-
 
 
 # ----------------------------------------------- Relational --------------------------------
@@ -44,43 +41,29 @@ class Slot(models.Model):
 			'DNI',
 		)
 
-
-
-	#patient = fields.Char()
 	patient_pro = fields.Char(
 			string='Paciente No existe',
 		)
 
-
 	# Patient Oeh
-	#patient_pro = fields.Many2one(
 	patient = fields.Many2one(
 			'oeh.medical.patient',
 			#string='Paciente',
 			string='Paciente Existe',
 		)
 
-
-
 	# Patient
-	#patient = fields.Many2one(
 	patient_tst = fields.Many2one(
 			'matrix.patient',
 			string='Paciente M',
 			#required=True,
 		)
 
-
-
-
 	doctor = fields.Many2one(
 			'matrix.doctor',
 			string='Doctor',
 			#required=True,
 		)
-
-
-
 
 
 #----------------------------------------------------------- Hot Button - For Container ---------

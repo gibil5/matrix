@@ -89,6 +89,7 @@ field_att_disabled="1"
 
 
         <!-- matrix --> 
+<!--        
         <menuitem   id="dev_matrix_all_menu"
 
                     parent="parent_dev_menu"
@@ -97,7 +98,7 @@ field_att_disabled="1"
 
                     action="matrix_all_tree_action"
                 />
-
+-->
 
 
 
