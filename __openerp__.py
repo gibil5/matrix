@@ -8,7 +8,7 @@
 
     'description': """
 
-        22 Aug 2019
+        28 Aug 2019
 
         For Openhealth. New Appointment Module (Object Oriented).
 
