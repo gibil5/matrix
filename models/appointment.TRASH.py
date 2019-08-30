@@ -1,3 +1,16 @@
+	#date_delay = fields.Float(
+	#		compute='_compute_date_delay',
+	#	)
+
+	#@api.multi
+	#@api.depends('patient')
+	#def _compute_date_delay(self):
+	#	for record in self:
+	#		record.date_delay = 0.5
+
+
+
+
 
 
 	#def move(self, appointment_date, delta_min):

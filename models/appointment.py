@@ -66,6 +66,8 @@ class Appointment(models.Model):
 
 # ----------------------------------------------- Computes ----------------------------------------
 	date_stop = fields.Datetime(
+			index=False,
+
 			compute='_compute_date_stop',
 		)
 
@@ -73,9 +75,7 @@ class Appointment(models.Model):
 	#@api.depends('patient')
 	def _compute_date_stop(self):
 		for record in self:
-			#record.date_stop = app_funcs.time_delta(record, record.date_start, 30)
 			record.date_stop = app_funcs.time_delta(record, record.date_start, record.delta_min)
-
 
 
 	delta_min = fields.Selection(
@@ -87,19 +87,6 @@ class Appointment(models.Model):
 		)
 
 
-
-	#date_delay = fields.Float(
-	#		compute='_compute_date_delay',
-	#	)
-
-	#@api.multi
-	#@api.depends('patient')
-	#def _compute_date_delay(self):
-	#	for record in self:
-	#		record.date_delay = 0.5
-
-
-
 	x_display = fields.Char(
 			compute='_compute_x_display',
 		)
@@ -107,18 +94,13 @@ class Appointment(models.Model):
 	@api.multi
 	#@api.depends('patient')
 	def _compute_x_display(self):
-
 		_dic_state = {
 						'scheduled': 'C',
 						'pre_scheduled': 'N',
 		}
-
 		for record in self:
-
 			if record.patient.name not in [False]:
-				#record.x_display = record.patient.get_display_code() + ' ' + str(record.doctor.idx)
 				record.x_display = record.patient.get_display_code() + ' ' + str(record.doctor.idx) +  ' ' +  _dic_state[record.state]
-
 			else:
 				record.x_display = record.patient_pre.replace(' ', '_') + ' ' + str(record.doctor.idx) +  ' ' +  _dic_state[record.state]
 
@@ -161,11 +143,8 @@ class Appointment(models.Model):
 			string='Tipo',
 		)
 
-
 	# Vspace
 	vspace = fields.Char(
 			' ',
 			readonly=True
 		)
-
-
