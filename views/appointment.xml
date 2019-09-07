@@ -132,50 +132,44 @@
 
 
 
-<!-- ACTIONS -->
-
-
-		<!-- appointment -->
-		<record model="ir.actions.act_window" id="appointment_all_tree_action">
-
-			<field name="name">Citas 2019_Lima</field>
-			
-			<field name="res_model">matrix.appointment</field>
-			
-			<field name="view_type">form</field>
-
-			<field name="view_mode">tree,form,calendar</field>
-
-			<field name="domain">[]</field>
-
-			<field name="context">{}</field>
-
-			<field name="limit">1000</field>
-<!--
-			<field name="view_mode">tree,form,kanban,graph,calendar</field>
-			<field name="view_id" ref="account_line_view_contasis_tree"/>
--->
-		</record>
-
-
-
-
 <!-- MENUS -->
 <!--
-                    name='Citas 2019_08_21_Lima'
-                    name='Citas 2019_08_21_Tacna'
 -->
-		<!-- Lima --> 
-		<menuitem   id="dev_appointment_cal_2019_08_21_lima_menu"
+
+
+		<!-- Lima 2 --> 
+		<menuitem   id="dev_appointment_cal_2019_lima_2_menu"
 
 					parent="parent_app_menu"
 
 					sequence="1"
 
-                    name='Calendario Lima'
+                    name='Calendario Lima Med'
 
-					action="app_action_calendar_2019_08_21_lima"
+					action="app_action_calendar_2019_lima_2"
 				/>
+
+
+		<!-- Lima 1 --> 
+		<menuitem   id="dev_appointment_cal_2019_lima_1_menu"
+
+					parent="parent_app_menu"
+					sequence="3"
+
+                    name='Calendario Lima Small'
+
+					action="app_action_calendar_2019_lima_1"
+
+				/>
+
+
+
+
+
+
+
+
+
 
 		<!-- tacna --> 
 <!--		

@@ -8,7 +8,7 @@
 
     'description': """
 
-        30 Aug 2019
+        6 Sep 2019
 
         For Openhealth. New Appointment Module (Object Oriented).
         Matrix model to solve the 2d bidimensional multi cell problem
@@ -71,7 +71,11 @@
         'views/app_search.xml',
 
         'views/app_calendar.xml',
+
+
+        'views/appointment_actions.xml',
         'views/appointment.xml',
+
 
 
         'views/slot.xml',

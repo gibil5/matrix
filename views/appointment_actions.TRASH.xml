@@ -1,0 +1,22 @@
+
+<!--
+Dep ?
+
+Tags
+2019_08_21_Lima
+-->
+
+		<record id="appointment_action_calendar" model="ir.actions.act_window">
+
+					<field name="name">Citas</field>
+
+					<field name="res_model">matrix.appointment</field>
+					<field name="view_type">form</field>
+					<field name="view_mode">calendar,tree,form</field>
+					<field name="view_id" eval="False"/>
+					<field name="domain">[]
+					</field>
+					<field name="context">{
+											  'default_date_delay': '0.5',
+						}</field>
+		</record>
