@@ -36,6 +36,8 @@
 							quick_add="False" 
 
 							mode="day"
+
+							event_open_popup="True"
 							>
 
 

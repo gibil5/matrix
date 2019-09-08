@@ -8,7 +8,7 @@
 
     'description': """
 
-        6 Sep 2019
+        8 Sep 2019
 
         For Openhealth. New Appointment Module (Object Oriented).
         Matrix model to solve the 2d bidimensional multi cell problem
