@@ -14,7 +14,7 @@
 
 
 		<!-- Lima 1 -->
-		<record id="app_action_calendar_2019_lima_1" model="ir.actions.act_window">
+		<record model="ir.actions.act_window" 	id="app_action_calendar_2019_lima_1">
 
 					<field name="name">Citas 2019_Lima_1</field>
 
@@ -32,7 +32,7 @@
 
 
 		<!-- Lima 2 -->
-		<record id="app_action_calendar_2019_lima_2" model="ir.actions.act_window">
+		<record model="ir.actions.act_window"	id="app_action_calendar_2019_lima_2">
 
 					<field name="name">Citas 2019_Lima_2</field>
 
@@ -54,28 +54,9 @@
 
 
 
+<!-- TREE -->
 
-
-
-		<!-- Tacna -->
-		<record id="app_action_calendar_2019_08_21_tacna" model="ir.actions.act_window">
-
-					<field name="name">Citas 2019_Tacna</field>
-
-					<field name="res_model">matrix.appointment</field>
-					<field name="view_type">form</field>
-					<field name="view_mode">calendar,tree,form</field>
-					<field name="view_id" eval="False"/>
-					<field name="domain">[]
-					</field>
-					<field name="context">{
-											  'default_date_delay': '0.5',
-						}</field>
-		</record>
-
-
-
-		<!-- Lima Tree -->
+		<!-- Lima -->
 		<record model="ir.actions.act_window" id="appointment_all_tree_action">
 
 			<field name="name">Citas 2019_Lima</field>

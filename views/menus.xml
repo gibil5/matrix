@@ -27,12 +27,104 @@
 				name="CITAS - 2019"
 		/>
 
-		<!-- app --> 
-		<menuitem   id="parent_app_menu" 
-							name="Citas"
+
+
+<!-- Lima --> 
+		<menuitem   id="parent_app_lima_menu" 
+							name="Citas Lima"
 							parent="main_app_menu"
 							sequence="1"
 						/>
+
+
+
+		<!-- Lima 2 --> 
+		<menuitem   id="dev_appointment_cal_2019_lima_2_menu"
+
+					parent="parent_app_lima_menu"
+
+					sequence="1"
+
+                    name='Calendario Lima Med'
+
+					action="app_action_calendar_2019_lima_2"
+				/>
+
+
+		<!-- Lima 1 --> 
+		<menuitem   id="dev_appointment_cal_2019_lima_1_menu"
+
+					parent="parent_app_lima_menu"
+
+					sequence="3"
+
+                    name='Calendario Lima Small'
+
+					action="app_action_calendar_2019_lima_1"
+
+				/>
+
+
+
+		<!-- appointment --> 
+		<menuitem   id="dev_appointment_all_menu"
+
+					parent="parent_app_lima_menu"
+
+					sequence="5"
+
+                    name='Citas'
+
+					action="appointment_all_tree_action"
+				/>
+
+
+
+<!-- Tacna --> 
+		<menuitem   id="parent_app_tacna_menu" 
+
+							name="Citas Tacna"
+
+							parent="main_app_menu"
+
+							sequence="3"
+						/>
+
+
+
+		<!-- Tacna 2 --> 
+		<menuitem   id="dev_appointment_cal_2019_tacna_2_menu"
+
+					parent="parent_app_tacna_menu"
+
+					sequence="1"
+
+                    name='Calendario Tacna Med'
+
+					action="app_action_calendar_2019_tacna_2"
+				/>
+
+
+		<!-- Tacna 1 --> 
+		<menuitem   id="dev_appointment_cal_2019_tacna_1_menu"
+
+					parent="parent_app_tacna_menu"
+
+					sequence="3"
+
+                    name='Calendario Tacna Small'
+
+					action="app_action_calendar_2019_tacna_1"
+				/>
+
+
+
+
+
+
+
+
+
 
 		<!-- Config --> 
 		<menuitem   id="parent_config_menu" 

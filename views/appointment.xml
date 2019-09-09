@@ -133,34 +133,6 @@
 
 
 <!-- MENUS -->
-<!--
--->
-
-
-		<!-- Lima 2 --> 
-		<menuitem   id="dev_appointment_cal_2019_lima_2_menu"
-
-					parent="parent_app_menu"
-
-					sequence="1"
-
-                    name='Calendario Lima Med'
-
-					action="app_action_calendar_2019_lima_2"
-				/>
-
-
-		<!-- Lima 1 --> 
-		<menuitem   id="dev_appointment_cal_2019_lima_1_menu"
-
-					parent="parent_app_menu"
-					sequence="3"
-
-                    name='Calendario Lima Small'
-
-					action="app_action_calendar_2019_lima_1"
-
-				/>
 
 
 
@@ -169,33 +141,6 @@
 
 
 
-
-
-		<!-- tacna --> 
-<!--		
-		<menuitem   id="dev_appointment_cal_2019_08_21_tacna_menu"
-
-					parent="parent_app_menu"
-
-					sequence="3"
-
-                    name='Calendario Tacna'
-
-					action="app_action_calendar_2019_08_21_tacna"
-				/>
--->
-
-		<!-- appointment --> 
-		<menuitem   id="dev_appointment_all_menu"
-
-					parent="parent_app_menu"
-
-					sequence="5"
-
-                    name='Citas'
-
-					action="appointment_all_tree_action"
-				/>
 
 
 
