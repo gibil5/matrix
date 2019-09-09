@@ -10,6 +10,18 @@ class Appointment(models.Model):
 
 
 
+# ----------------------------------------------- Fields ---------------------------------------------
+
+	comment = fields.Text(
+
+			'Comentario',
+		)
+
+
+
+
+
+
 # ----------------------------------------------- Relational --------------------------------
 	patient_id = fields.Many2one(
 			'oeh.medical.patient',
@@ -148,3 +160,24 @@ class Appointment(models.Model):
 			' ',
 			readonly=True
 		)
+
+
+
+# ----------------------------------------------- Test - Class Methods --------------------------------
+	@classmethod
+
+	#def cmethod():
+	def cmethod(self):
+
+		s = 'Class Method'
+
+		return s
+
+
+	@staticmethod
+	
+	def smethod():
+
+		s = 'Static Method'
+
+		return s

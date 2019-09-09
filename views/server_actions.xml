@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+
+
+<!--
+		<record model="ir.actions.server" id="print_instance">
+			<field name="model_id" ref="model_res_partner"/>
+				raise Warning(object.name)
+
+				raise Warning(object.patient.name)
+
+				if object.some_condition():
+				        "view_mode": "form",
+-->
+
+		<record model="ir.actions.server" id="test_instance_1">
+
+			<field name="name">Res Partner Server Action</field>
+			
+			<field name="model_id" ref="model_matrix_appointment"/>
+			
+			<field name="code">
+
+
+
+				if self.env['matrix.doctor'].search([
+															('name', 'in', ['Dr. Chavarri']),
+														],
+														limit=1,
+													).active:
+					raise Warning('This')
+
+
+
+
+<!--
+				if True:
+
+					raise Warning(obj.cmethod())
+				if object.state in ['scheduled']:
+					raise Warning(object.patient.name)
+-->
+<!--
+
+				if object.state in ['scheduled']:
+
+				    action = {
+
+				        "type": "ir.actions.act_window",
+
+				        "view_mode": "calendar",
+				        
+				        "res_model": object._name,
+				        
+				        "res_id": object.id,
+				    }
+-->
+			</field>
+
+		</record>
+
+
+	</data>
+</openerp>

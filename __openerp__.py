@@ -40,6 +40,9 @@
 
 
         'security/ir.model.access.csv',
+        'security/matrix_security.xml',             # Groups
+
+
 
         #'views/views.xml',
         #'views/templates.xml',
@@ -51,6 +54,7 @@
 
 
 
+        'views/server_actions.xml',
         'views/lima_app_actions.xml',
         'views/tacna_app_actions.xml',
 

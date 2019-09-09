@@ -4,23 +4,6 @@
 
 
 
-<!-- Main - DEV -->
-<!--
-<menuitem   	id="main_dev_menu"
-				sequence="-6"
-				name="DEV"
-		/>
-
-		<menuitem   id="parent_dev_menu" 
-							name="DEV"
-							parent="main_dev_menu"
-							sequence="1"
-						/>
--->
-
-
-
-
 <!-- Main - app -->
 <menuitem   	id="main_app_menu"
 				sequence="-10"
@@ -34,6 +17,8 @@
 							name="Citas Lima"
 							parent="main_app_menu"
 							sequence="1"
+
+							groups="matrix.roots,matrix.lima"
 						/>
 
 
@@ -66,8 +51,8 @@
 
 
 
-		<!-- appointment --> 
-		<menuitem   id="dev_appointment_all_menu"
+		<!-- Lima Tree --> 
+		<menuitem   id="dev_appointment_all_lima_menu"
 
 					parent="parent_app_lima_menu"
 
@@ -80,6 +65,26 @@
 
 
 
+
+		<!-- Test Lima --> 
+<!--
+		<menuitem   id="dev_appointment_test_lima_menu"
+
+					parent="parent_app_lima_menu"
+
+					sequence="7"
+
+                    name='Test'
+
+					action="test_instance_1"
+				/>
+-->
+
+
+
+
+
+
 <!-- Tacna --> 
 		<menuitem   id="parent_app_tacna_menu" 
 
@@ -88,6 +93,8 @@
 							parent="main_app_menu"
 
 							sequence="3"
+
+							groups="matrix.roots,matrix.tacna"
 						/>
 
 
@@ -118,6 +125,18 @@
 				/>
 
 
+
+		<!-- Tacna Tree --> 
+		<menuitem   id="dev_appointment_all_tacna_menu"
+
+					parent="parent_app_tacna_menu"
+
+					sequence="5"
+
+                    name='Citas'
+
+					action="appointment_all_tree_action"
+				/>
 
 
 

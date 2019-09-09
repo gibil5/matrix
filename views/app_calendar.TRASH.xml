@@ -1,4 +1,23 @@
 <!--
+9 Sep 2019
+-->
+
+<!--                        
+						<field name="doctor"/>
+						<field name="patient"/>
+						
+						<field name="patient_status"/>
+						<field name="x_patient_name_short"/>
+						<field name="x_doctor_code"/>
+-->
+
+
+
+
+
+
+
+<!--
                     <field name="help" type="html">
                       <p class="oe_view_nocontent_create">
                         Click to add a new appointment.
