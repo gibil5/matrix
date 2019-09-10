@@ -47,7 +47,7 @@
 
 
                                                     (4, ref('openhealth.manager_clinicachavarri')),
-                                                    (4, ref('openhealth.lloli_clinicachavarri')),
+                                                    (4, ref('openhealth.svargas_clinicachavarri')),
 
 
 
@@ -82,7 +82,7 @@
 
 
                                                     (4, ref('openhealth.manager_clinicachavarri')),
-                                                    (4, ref('openhealth.lloli_clinicachavarri')),
+                                                    (4, ref('openhealth.svargas_clinicachavarri')),
 
 
 
