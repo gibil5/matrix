@@ -11,6 +11,9 @@
 		/>
 
 
+<!--
+							groups="matrix.roots,matrix.lima"
+-->
 
 <!-- Calendar --> 
 		<menuitem   id="parent_app_lima_menu" 
@@ -18,7 +21,6 @@
 							parent="main_app_menu"
 							sequence="1"
 
-							groups="matrix.roots,matrix.lima"
 						/>
 
 

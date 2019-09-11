@@ -40,7 +40,7 @@
 
 
         'security/ir.model.access.csv',
-        'security/matrix_security.xml',             # Groups
+        #'security/matrix_security.xml',             # Dep
 
 
 
