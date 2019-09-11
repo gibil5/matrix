@@ -12,9 +12,9 @@
 
 
 
-<!-- Lima --> 
+<!-- Calendar --> 
 		<menuitem   id="parent_app_lima_menu" 
-							name="Citas Lima"
+							name="Citas"
 							parent="main_app_menu"
 							sequence="1"
 
@@ -23,29 +23,30 @@
 
 
 
-		<!-- Lima 2 --> 
+		<!-- Med 2 --> 
 		<menuitem   id="dev_appointment_cal_2019_lima_2_menu"
 
 					parent="parent_app_lima_menu"
 
 					sequence="1"
 
-                    name='Calendario Lima Med'
+                    name='Calendario Med'
 
-					action="app_action_calendar_2019_lima_2"
+					action="app_action_calendar_2019_2"
 				/>
 
 
-		<!-- Lima 1 --> 
+
+		<!-- Small 1 --> 
 		<menuitem   id="dev_appointment_cal_2019_lima_1_menu"
 
 					parent="parent_app_lima_menu"
 
 					sequence="3"
 
-                    name='Calendario Lima Small'
+                    name='Calendario Small'
 
-					action="app_action_calendar_2019_lima_1"
+					action="app_action_calendar_2019_1"
 
 				/>
 
@@ -86,6 +87,11 @@
 
 
 <!-- Tacna --> 
+		<!-- Tacna 2 --> 
+		<!-- Tacna 1 --> 
+		<!-- Tacna Tree --> 
+
+<!--
 		<menuitem   id="parent_app_tacna_menu" 
 
 							name="Citas Tacna"
@@ -99,7 +105,6 @@
 
 
 
-		<!-- Tacna 2 --> 
 		<menuitem   id="dev_appointment_cal_2019_tacna_2_menu"
 
 					parent="parent_app_tacna_menu"
@@ -112,7 +117,6 @@
 				/>
 
 
-		<!-- Tacna 1 --> 
 		<menuitem   id="dev_appointment_cal_2019_tacna_1_menu"
 
 					parent="parent_app_tacna_menu"
@@ -126,7 +130,6 @@
 
 
 
-		<!-- Tacna Tree --> 
 		<menuitem   id="dev_appointment_all_tacna_menu"
 
 					parent="parent_app_tacna_menu"
@@ -137,7 +140,7 @@
 
 					action="appointment_all_tree_action"
 				/>
-
+-->
 
 
 

@@ -55,8 +55,11 @@
 
 
         'views/server_actions.xml',
-        'views/lima_app_actions.xml',
-        'views/tacna_app_actions.xml',
+        #'views/lima_app_actions.xml',
+        #'views/tacna_app_actions.xml',
+
+
+        'views/app_actions.xml',
 
 
         #'views/menus_dep.xml',     # Dep 

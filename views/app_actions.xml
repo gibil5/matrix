@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+
+
+
+<!-- ACTIONS -->
+
+
+
+
+<!-- ACTIONS - Calendar - Confirmed -->
+
+
+
+		<!-- Lima 1 -->
+		<record model="ir.actions.act_window" 	id="app_action_calendar_2019_1">
+
+					<field name="name">Citas 2019_Lima_1</field>
+
+					<field name="res_model">matrix.appointment</field>
+					<field name="view_type">form</field>
+					<field name="view_mode">calendar,tree,form</field>
+					<field name="view_id" eval="False"/>
+					<field name="domain">[]
+					</field>
+					<field name="context">{
+											  'default_state': 'pre_scheduled',
+						}</field>
+		</record>
+
+
+
+		<!-- Lima 2 -->
+		<record model="ir.actions.act_window"	id="app_action_calendar_2019_2">
+
+					<field name="name">Citas 2019_Lima_2</field>
+
+					<field name="res_model">matrix.appointment</field>
+					<field name="view_type">form</field>
+					<field name="view_mode">calendar,tree,form</field>
+					<field name="view_id" eval="False"/>
+					<field name="domain">[]
+					</field>
+					<field name="context">{
+											  'default_state': 'pre_scheduled',
+						}</field>
+		</record>
+
+
+
+
+<!-- TREE -->
+
+		<!-- Lima -->
+		<record model="ir.actions.act_window" id="appointment_all_tree_action">
+
+			<field name="name">Citas 2019_Lima</field>
+			
+			<field name="res_model">matrix.appointment</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form,calendar</field>
+			<field name="domain">[]</field>
+			<field name="context">{}</field>
+			<field name="limit">1000</field>
+<!--
+			<field name="view_id" ref="account_line_view_contasis_tree"/>
+-->
+		</record>
+
+
+
+	</data>
+</openerp>
