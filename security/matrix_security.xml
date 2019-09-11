@@ -45,10 +45,8 @@
                                                     (4, ref('openhealth.fchavarri_clinicachavarri')),
 
 
-
                                                     (4, ref('openhealth.manager_clinicachavarri')),
                                                     (4, ref('openhealth.svargas_clinicachavarri')),
-
 
 
                                                     (4, ref('openhealth.plataforma_clinicachavarri')),
@@ -59,7 +57,6 @@
 
 
                                                     (4, ref('openhealth.asistente_clinicachavarri')),
-                                                    (4, ref('openhealth.yochante_clinicachavarri')),
                                                     (4, ref('openhealth.eruiz_clinicachavarri')),
                                     ]"/>
         </record>

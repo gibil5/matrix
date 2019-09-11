@@ -529,6 +529,15 @@
 			}
 		},
 		{
+			"file": "security/matrix_security.xml",
+			"settings":
+			{
+				"buffer_size": 4828,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "views/menus.xml",
 			"settings":
 			{
@@ -560,42 +569,6 @@
 			"settings":
 			{
 				"buffer_size": 1080,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "security/matrix_security.xml",
-			"settings":
-			{
-				"buffer_size": 4931,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "models/appointment.py",
-			"settings":
-			{
-				"buffer_size": 3525,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "views/appointment.xml",
-			"settings":
-			{
-				"buffer_size": 3254,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "views/app_calendar.xml",
-			"settings":
-			{
-				"buffer_size": 734,
-				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		}
@@ -673,6 +646,9 @@
 	},
 	"file_history":
 	[
+		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/appointment.py",
+		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/appointment.xml",
+		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/app_calendar.xml",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/app_calendar.TRASH.xml",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/security/ir.model.access.csv",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/tacna_app_actions.xml",
@@ -681,14 +657,12 @@
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/security/matrix_security.TRASH.xml",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/readme.txt",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/oehealth/views/oehealth.xml",
-		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/app_calendar.xml",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/appointment_actions.xml",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/menus.xml",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/patient_personal.xml",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/patient.py",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/matrix.py",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/container.py",
-		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/appointment.py",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/appointment.TRASH.py",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/appointment_actions.TRASH.xml",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/slot.py",
@@ -699,7 +673,6 @@
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/oeh_patient.xml",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/matrix.xml",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/oeh_patient.py",
-		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/appointment.xml",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/data/doctors.xml",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/menus_dep.xml",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/hr/__init__.py",
@@ -954,14 +927,44 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 409.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
+					"file": "security/matrix_security.xml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4828,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								62,
+								326
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 41.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
 					"file": "views/menus.xml",
 					"semi_transient": false,
 					"settings":
@@ -986,11 +989,11 @@
 						"translation.y": 42.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 3,
 					"file": "views/app_actions.xml",
 					"semi_transient": false,
 					"settings":
@@ -1015,11 +1018,11 @@
 						"translation.y": 176.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 4,
 					"file": "views/lima_app_actions.xml",
 					"semi_transient": false,
 					"settings":
@@ -1044,11 +1047,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 5,
 					"file": "views/tacna_app_actions.xml",
 					"semi_transient": false,
 					"settings":
@@ -1073,124 +1076,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "security/matrix_security.xml",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4931,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1479,
-								1479
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/XML/XML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 492.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "models/appointment.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3525,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								316,
-								316
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "views/appointment.xml",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3254,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2062,
-								2062
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/XML/XML.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "views/app_calendar.xml",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 734,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								354,
-								354
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/XML/XML.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -1247,7 +1133,7 @@
 	"project": "Matrix.sublime-project",
 	"replace":
 	{
-		"height": 46.0
+		"height": 66.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1423,7 +1309,7 @@
 		[
 			[
 				"",
-				"~/cellar/bitbucket/web_calendar/WebCalendar.sublime-project"
+				"~/cellar/github/openhealth/OpenHealth-MIN.sublime-project"
 			],
 			[
 				"\t",
