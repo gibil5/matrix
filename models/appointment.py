@@ -7,6 +7,9 @@ class Appointment(models.Model):
 
 	_name = 'matrix.appointment'
 
+	_order = 'date_start desc'
+
+	_description = 'Matrix Appointment'
 
 
 
@@ -134,7 +137,8 @@ class Appointment(models.Model):
 
 # ----------------------------------------------- Fields ---------------------------------------------
 	date_start = fields.Datetime(
-			'Hora',
+			#'Hora',
+			'Fecha',
 		)
 
 	state = fields.Selection(
@@ -150,7 +154,7 @@ class Appointment(models.Model):
 				('consultation', 	'Consulta'),
 				('procedure', 		'Procedimiento'),
 				('control', 		'Control'),
-				('event', 			'Evento'),
+				('event', 			'Reunion'),
 			],
 			string='Tipo',
 		)
