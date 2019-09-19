@@ -90,10 +90,13 @@
 			<field name="arch" type="xml">
 				<tree string="appointment Tree">
 <!--
-					<field name="name"/>
 					<field name="date_stop"/>
 					<field name="x_display"/>
 -->
+
+					<field name="name"/>
+
+
 					<field name="date_start"/>
 					<field name="delta_min"/>
 

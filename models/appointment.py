@@ -73,7 +73,26 @@ class Appointment(models.Model):
 
 
 
-# ----------------------------------------------- Fields ---------------------------------------------
+# ----------------------------------------------- Natives ---------------------------------------------
+
+
+	name = fields.Char(
+			'Nombre',
+			compute='_compute_name',
+		)
+
+	@api.multi
+	def _compute_name(self):
+
+		sep = '-'
+
+		for record in self:
+
+			record.name = record.patient.get_display_code() + sep + record.doctor.name + sep + record.app_type
+
+
+
+
 
 	patient = fields.Many2one(
 			'oeh.medical.patient',
