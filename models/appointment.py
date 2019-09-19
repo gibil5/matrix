@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import datetime
 from openerp import models, fields, api
+
 from . import app_funcs
 
 class Appointment(models.Model):
@@ -10,6 +11,18 @@ class Appointment(models.Model):
 	_order = 'date_start desc'
 
 	_description = 'Matrix Appointment'
+
+
+
+
+# ----------------------------------------------- On changes ---------------------------------------------
+	# On Change Dni
+	@api.onchange('dni_pre')
+	def _onchange_dni_pre(self):
+
+		#self.patient = ord_funcs.search_patient_by_id_document(self)
+		self.patient = app_funcs.search_patient_by_id_document(self)
+
 
 
 
@@ -97,6 +110,7 @@ class Appointment(models.Model):
 			[
 				(30, '30 min'),
 				(15, '15 min'),
+				(60, '60 min'),
 			],
 			string='Duracion',
 		)
@@ -115,9 +129,29 @@ class Appointment(models.Model):
 		}
 		for record in self:
 			if record.patient.name not in [False]:
-				record.x_display = record.patient.get_display_code() + ' ' + str(record.doctor.idx) +  ' ' +  _dic_state[record.state]
+				#record.x_display = record.patient.get_display_code() + ' ' + str(record.doctor.idx) +  ' ' +  _dic_state[record.state]
+				record.x_display = record.patient.get_display_code() + '-' + record.get_dni_display_code() + ' ' + str(record.doctor.idx) +  ' ' +  _dic_state[record.state]
+
 			else:
 				record.x_display = record.patient_pre.replace(' ', '_') + ' ' + str(record.doctor.idx) +  ' ' +  _dic_state[record.state]
+
+
+
+
+# ----------------------------------------------- Get Display Code --------------------------------
+
+	#@api.multi
+	def get_dni_display_code(self):
+		#print()
+		#print('Get Display Code')
+
+		if self.dni_pre not in [False]:
+			code = self.dni_pre 
+		else:
+			code = 'x'
+
+		return code
+
 
 
 	

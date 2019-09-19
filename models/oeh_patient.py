@@ -73,3 +73,5 @@ class Patient(models.Model):
 		code = words[0] + '_' + words[1]
 
 		return code
+
+

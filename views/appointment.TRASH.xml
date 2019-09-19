@@ -1,0 +1,51 @@
+<!--
+17 Sep 2019
+-->
+<!--
+								context="{
+											'search_default_management_id': active_id,  
+										}"                                          
+								
+								namex="(management_order_line_form_action)d"
+-->
+						<!-- Test -->
+<!--
+						<button 
+								class="oe_highlight"
+								type="action" 
+								context="{
+										}"                                          
+								name="%(test_instance_1)d"
+								string="Test" 
+						/>
+-->
+
+
+
+<!-- MENUS -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<!-- appointment --> 
+<!--		
+		<menuitem   id="dev_appointment_cal_menu"
+
+					parent="parent_app_menu"
+
+					sequence="3"
+
+                    name='Citas Cal'
+
+					action="appointment_action_calendar"
+				/>
+-->
