@@ -189,7 +189,7 @@ class Appointment(models.Model):
 			[
 				(30, '30 min'),
 				(15, '15 min'),
-				(60, '60 min'),
+				#(60, '60 min'),
 			],
 			string='Duracion',
 		)
