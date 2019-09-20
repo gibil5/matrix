@@ -20,7 +20,9 @@ class Control(models.Model):
 
 # ----------------------------------------------------------- Relational --------------------------------
 
-	appointment = fields.Many2one(
+	#appointment = fields.Many2one(
+
+	ma_appointment = fields.Many2one(
 	
 			#'oeh.medical.appointment',
 			'matrix.appointment',

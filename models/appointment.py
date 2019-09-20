@@ -72,6 +72,38 @@ class Appointment(models.Model):
 
 
 
+# ----------------------------------------------- Get Type Code --------------------------------
+
+	#@api.multi
+	def get_type_code(self):
+
+		_dic = {
+					'consultation': 	'Consulta',
+					'procedure': 		'Procedimiento',
+					'control': 			'Control',
+					'event': 			'Reunion',
+		}
+
+		code = _dic[self.app_type]
+
+		return code
+
+
+
+# ----------------------------------------------- Get Date Code --------------------------------
+
+	#@api.multi
+	def get_date_code(self):
+
+		code = self.date_start
+
+		#code = app_funcs.time_delta(record, record.date_start, record.delta_min)
+		code = app_funcs.time_delta(self, self.date_start, -300)
+
+		return code
+
+
+
 
 # ----------------------------------------------- Natives ---------------------------------------------
 
@@ -84,11 +116,13 @@ class Appointment(models.Model):
 	@api.multi
 	def _compute_name(self):
 
-		sep = '-'
+		se = '-'
 
 		for record in self:
 
-			record.name = record.patient.get_display_code() + sep + record.doctor.name + sep + record.app_type
+			#record.name = record.patient.get_display_code() + sep + record.doctor.name + sep + record.get_type_code()
+			#record.name = record.patient.get_display_code() + sep + record.doctor.get_display_code() + sep + record.get_type_code()
+			record.name = record.patient.get_display_code() + se + record.doctor.get_display_code() + se + record.get_type_code() + se + record.get_date_code()
 
 
 
@@ -218,23 +252,3 @@ class Appointment(models.Model):
 			readonly=True
 		)
 
-
-
-# ----------------------------------------------- Test - Class Methods --------------------------------
-	@classmethod
-
-	#def cmethod():
-	def cmethod(self):
-
-		s = 'Class Method'
-
-		return s
-
-
-	@staticmethod
-	
-	def smethod():
-
-		s = 'Static Method'
-
-		return s

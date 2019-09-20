@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+
+
+
+<!-- FORM -->
+        <record model="ir.ui.view" id="control_form_view">
+
+            <field name="name">matrix.openhealth.control</field>
+
+            <field name="model">openhealth.control</field>
+
+
+            <field name="inherit_id" ref="openhealth.control_form_view"/>            
+
+
+            <field name="mode">primary</field>
+
+            <field name="priority">1</field>
+
+            <field name="arch" type="xml">
+
+
+                <xpath expr="//field[@name='evaluation_start_date']" position="after">
+
+                    <field name="vspace"/>
+
+                    <field name="ma_appointment"/>
+                </xpath>
+            </field>
+        </record>
+
+
+	</data>
+</openerp>

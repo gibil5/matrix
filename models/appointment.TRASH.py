@@ -1,3 +1,27 @@
+# 19 Sep 2019
+# ----------------------------------------------- Test - Class Methods --------------------------------
+	@classmethod
+
+	#def cmethod():
+	def cmethod(self):
+
+		s = 'Class Method'
+
+		return s
+
+
+	@staticmethod
+	
+	def smethod():
+
+		s = 'Static Method'
+
+		return s
+
+
+
+
+
 	#date_delay = fields.Float(
 	#		compute='_compute_date_delay',
 	#	)

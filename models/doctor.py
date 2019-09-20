@@ -19,3 +19,15 @@ class Doctor(models.Model):
 	)
 
 
+
+# ----------------------------------------------- Get Display Code --------------------------------
+
+	#@api.multi
+	def get_display_code(self):
+
+		words = self.name.upper().split()
+		
+		code = words[0] + '_' + words[1]
+
+		return code
+
