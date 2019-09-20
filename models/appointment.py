@@ -105,6 +105,21 @@ class Appointment(models.Model):
 
 
 
+# ----------------------------------------------- Get Comment Code --------------------------------
+
+	#@api.multi
+	def get_comment_code(self):
+
+		words = self.comment.split()
+		
+		#code = words[0] + '_' + words[1]
+		code = words[0]
+
+		return code
+
+
+
+
 # ----------------------------------------------- Natives ---------------------------------------------
 
 
@@ -120,11 +135,14 @@ class Appointment(models.Model):
 
 		for record in self:
 
-			#record.name = record.patient.get_display_code() + sep + record.doctor.name + sep + record.get_type_code()
-			#record.name = record.patient.get_display_code() + sep + record.doctor.get_display_code() + sep + record.get_type_code()
-			record.name = record.patient.get_display_code() + se + record.doctor.get_display_code() + se + record.get_type_code() + se + record.get_date_code()
+			if record.patient.name not in [False]:
+				#record.name = record.patient.get_display_code() + sep + record.doctor.name + sep + record.get_type_code()
+				#record.name = record.patient.get_display_code() + sep + record.doctor.get_display_code() + sep + record.get_type_code()
+				record.name = record.patient.get_display_code() + se + record.doctor.get_display_code() + se + record.get_type_code() + se + record.get_date_code()
 
-
+			else:
+				#record.name = record.comment + se + record.doctor.get_display_code() + se + record.get_type_code() + se + record.get_date_code()
+				record.name = record.get_comment_code() + se + record.doctor.get_display_code() + se + record.get_type_code() + se + record.get_date_code()
 
 
 
@@ -141,6 +159,14 @@ class Appointment(models.Model):
 	dni_pre = fields.Char(
 			'DNI',
 		)
+
+
+
+	patient_exists = fields.Boolean(
+			'Paciente Existe ?',
+			default=True,
+		)
+
 
 
 
@@ -181,12 +207,17 @@ class Appointment(models.Model):
 						'pre_scheduled': 'N',
 		}
 		for record in self:
+
+			# Patient exists in DB
 			if record.patient.name not in [False]:
 				#record.x_display = record.patient.get_display_code() + ' ' + str(record.doctor.idx) +  ' ' +  _dic_state[record.state]
 				record.x_display = record.patient.get_display_code() + '-' + record.get_dni_display_code() + ' ' + str(record.doctor.idx) +  ' ' +  _dic_state[record.state]
 
+			# Does not exist
 			else:
-				record.x_display = record.patient_pre.replace(' ', '_') + ' ' + str(record.doctor.idx) +  ' ' +  _dic_state[record.state]
+				#record.x_display = record.patient_pre.replace(' ', '_') + ' ' + str(record.doctor.idx) +  ' ' +  _dic_state[record.state]
+				#record.x_display = record.comment.replace(' ', '_') + ' ' + str(record.doctor.idx) +  ' ' +  _dic_state[record.state]
+				record.x_display = record.get_comment_code() + ' ' + str(record.doctor.idx) +  ' ' +  _dic_state[record.state]
 
 
 

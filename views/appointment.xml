@@ -39,13 +39,26 @@
 					<sheet>
 						<group>
 							<group>
+								<field name="patient_exists"/>
+
+
 								<field name="dni_pre"/>
 
-								<field name="patient"/>
+
+								<field name="patient"
+															attrs="{     
+																		'required':     [('patient_exists', 'in', [True])], 
+																}"
+
+									/>
 
 								<field name="app_type"		required="1"/>
 
-								<field name="comment"/>
+								<field name="comment"
+															attrs="{     
+																		'required':     [('patient_exists', 'not in', [True])], 
+																}"
+									/>
 							</group>
 
 

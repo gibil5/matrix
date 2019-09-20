@@ -529,45 +529,10 @@
 			}
 		},
 		{
-			"file": "models/control.py",
+			"file": "readme.txt",
 			"settings":
 			{
-				"buffer_size": 603,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "views/control.xml",
-			"settings":
-			{
-				"buffer_size": 755,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "views/appointment.xml",
-			"settings":
-			{
-				"buffer_size": 2229,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "views/oeh_patient.xml",
-			"settings":
-			{
-				"buffer_size": 669,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "models/session.py",
-			"settings":
-			{
-				"buffer_size": 606,
+				"buffer_size": 52,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -576,25 +541,16 @@
 			"file": "models/appointment.py",
 			"settings":
 			{
-				"buffer_size": 5308,
+				"buffer_size": 6259,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "models/app_funcs.py",
+			"file": "views/appointment.xml",
 			"settings":
 			{
-				"buffer_size": 1215,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "models/doctor.py",
-			"settings":
-			{
-				"buffer_size": 474,
+				"buffer_size": 2534,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -605,6 +561,32 @@
 			{
 				"buffer_size": 1465,
 				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "models/control.py",
+			"settings":
+			{
+				"buffer_size": 640,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "views/control.xml",
+			"settings":
+			{
+				"buffer_size": 757,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "views/oeh_patient.xml",
+			"settings":
+			{
+				"buffer_size": 669,
 				"line_ending": "Unix"
 			}
 		}
@@ -682,6 +664,11 @@
 	},
 	"file_history":
 	[
+		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/session.py",
+		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/app_funcs.py",
+		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/doctor.py",
+		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/patient.py",
+		"/Users/gibil/Desktop/Knowledge-Management-System_9_0_181112_031018/knowledge/__openerp__.py",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/appointment.TRASH.py",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/__init__.py",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/appointment.xml",
@@ -692,7 +679,6 @@
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/app_actions.xml",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/tacna_app_actions.xml",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/lima_app_actions.xml",
-		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/patient.py",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/appointment.py",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/app_calendar.xml",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/app_calendar.TRASH.xml",
@@ -728,13 +714,11 @@
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/hr/views/hr.xml",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/oeh_patient.TRASH.xml",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/container.xml",
-		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/app_funcs.py",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/oehealth/oeh_medical/oeh_medical.py",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/doctor.xml",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/slot.TRASH.py",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/color_field.py",
 		"/Users/gibil/cellar/bitbucket/web_calendar/readme.txt",
-		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/doctor.py",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/patient.xml",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/container.TRASH.xml",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/slot.TRASH.xml",
@@ -807,9 +791,7 @@
 		"/Users/gibil/cellar/github/price_list/views/product/pricelist_container.TRASH.xml",
 		"/Users/gibil/cellar/github/price_list/views/order/order.xml",
 		"/Users/gibil/cellar/github/price_list/models/product/pricelist_container.TRASH.py",
-		"/Users/gibil/cellar/github/price_list/models/management/management.py",
-		"/Users/gibil/cellar/github/price_list/models/product/px_vars.py",
-		"/Users/gibil/cellar/github/price_list/models/lib/sys_funcs.py"
+		"/Users/gibil/cellar/github/price_list/models/management/management.py"
 	],
 	"find":
 	{
@@ -827,6 +809,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"exist",
+			"bool",
+			"boolean",
+			"patient.get_di",
 			"delta",
 			"compute",
 			"test",
@@ -939,7 +925,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -955,8 +941,8 @@
 						"selection":
 						[
 							[
-								1535,
-								1535
+								185,
+								185
 							]
 						],
 						"settings":
@@ -964,35 +950,6 @@
 							"syntax": "Packages/Python/Python.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1190.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "models/control.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 603,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								341,
-								341
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1002,20 +959,164 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "views/control.xml",
+					"buffer": 1,
+					"file": "readme.txt",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 755,
+						"buffer_size": 52,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								615,
-								615
+								52,
+								52
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "models/appointment.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6259,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3611,
+								3611
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2463.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "views/appointment.xml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2534,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1199,
+								1199
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 594.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "models/oeh_patient.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1465,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1382,
+								1463
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 629.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "models/control.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 640,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								460,
+								460
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "views/control.xml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 757,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								670,
+								670
 							]
 						],
 						"settings":
@@ -1028,40 +1129,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "views/appointment.xml",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2229,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2209,
-								2229
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/XML/XML.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1274.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
+					"buffer": 7,
 					"file": "views/oeh_patient.xml",
 					"semi_transient": false,
 					"settings":
@@ -1087,152 +1159,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "models/session.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 606,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								501,
-								501
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
 					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "models/appointment.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5308,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2136,
-								2136
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "models/app_funcs.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1215,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								484,
-								484
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 221.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "models/doctor.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 474,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								411,
-								411
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "models/oeh_patient.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1465,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1198,
-								1464
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 353.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
 					"type": "text"
 				}
 			]
