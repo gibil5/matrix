@@ -116,7 +116,7 @@ class Appointment(models.Model):
 			code = words[0]
 
 		else:
-			code = False
+			code = 'x'
 
 		return code
 
