@@ -110,10 +110,13 @@ class Appointment(models.Model):
 	#@api.multi
 	def get_comment_code(self):
 
-		words = self.comment.split()
-		
-		#code = words[0] + '_' + words[1]
-		code = words[0]
+		if self.comment not in [False]:
+
+			words = self.comment.split()
+			code = words[0]
+
+		else:
+			code = False
 
 		return code
 
