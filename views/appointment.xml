@@ -16,21 +16,24 @@
 					<header>
 
 						<!-- update -->
-<!--
 						<button 
 								type="object" 
 								class="oe_highlight"
 								name="update"
-								string="Actualizar"                               
+								string="Actualizar"
 						/>
--->
 
 						<!-- remove_myself -->
 						<button 
 								type="object" 
+
 								class="oe_highlight oe_right"
+
 								name="remove_myself"
+
 								string="Eliminar"                               
+
+								confirm="Importante: La Cita va a ser ELIMINADA. Desea continuar ?"
 						/>
 					</header>
 
@@ -61,19 +64,30 @@
 															options="{'no_create': True, 'no_create_edit':True}" 
 
 															attrs="{     
+																		'invisible':	[('patient_exists', 'not in', [True])], 
 																		'required':		[('patient_exists', 'in', [True])], 
 																}"
 
 
 									/>
 
-								<field name="app_type"		required="1"/>
+								<field name="patient_pre"
+															attrs="{     
+																		'invisible':	[('patient_exists', 'in', [True])], 
+																		'required':		[('patient_exists', 'not in', [True])], 
+																}"
+									/>
 
-								<field name="comment"
+
+								<field name="app_type"		required="1"/>
+<!--
 															attrs="{     
 																		'required':     [('patient_exists', 'not in', [True])], 
 																}"
-									/>
+-->
+
+								<field name="comment"/>
+
 							</group>
 
 
@@ -92,7 +106,6 @@
 
 							<group>
 
-								<field name="patient_pre"	invisible="1"/>
 <!--
 								<field name="vspace"/>
 								<field name="date_start"      widget="float_time"   />

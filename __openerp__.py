@@ -81,6 +81,7 @@
 
         'views/app_search.xml',
         'views/app_calendar.xml',
+
         #'views/appointment_actions.xml',
         'views/appointment.xml',
 

@@ -15,15 +15,50 @@ class Appointment(models.Model):
 
 
 
-# ----------------------------------------------- Relational ---------------------------------------------
+# ----------------------------------------------- Natives ---------------------------------------------
 
 	patient = fields.Many2one(
 			'oeh.medical.patient',
 			string='Paciente Existe',
 		)
 
+	patient_pre = fields.Char(
+			string='Paciente NO existe',
+		)
+
+	patient_exists = fields.Boolean(
+			'Paciente Existe ?',
+			default=True,
+		)
+
+	dni_pre = fields.Char(
+			'DNI',
+		)
+
+
 
 # ----------------------------------------------- Getters --------------------------------
+
+	# Get Patient Pre Code
+	def get_patient_pre_code(self):
+
+		if self.patient_pre not in [False]:
+
+			words = self.patient_pre.split()
+			
+			if len(words) > 1:
+				code = words[0] + '_' + words[1]
+
+			else:
+				code = words[0]
+
+		else:
+			code = 'x'
+
+		return code
+
+
+
 
 	# Get DNI Code
 	def get_dni_display_code(self):
@@ -98,18 +133,21 @@ class Appointment(models.Model):
 			# Patient exists in DB
 			if record.patient.name not in [False]:
 
-				record.x_display = record.patient.get_display_code() + '-' + record.get_dni_display_code() + ' ' + str(record.doctor.idx) +  ' ' +  _dic_state[record.state]
+				#record.x_display = record.patient.get_display_code() + '-' + record.get_dni_display_code() + ' ' + str(record.doctor.idx) +  ' ' +  _dic_state[record.state]
+				record.x_display = record.patient.get_display_code() + ' ' + str(record.doctor.idx) +  ' ' +  _dic_state[record.state]
 
 			# Does not exist
 			else:
 
-				record.x_display = record.get_comment_code() + ' ' + str(record.doctor.idx) +  ' ' +  _dic_state[record.state]
+				#record.x_display = record.get_comment_code() + ' ' + str(record.doctor.idx) +  ' ' +  _dic_state[record.state]
+				record.x_display = record.get_patient_pre_code() + ' ' + str(record.doctor.idx) +  ' ' +  _dic_state[record.state]
 
 
 
 	# Name
 	name = fields.Char(
 			'Nombre',
+
 			compute='_compute_name',
 		)
 
@@ -126,7 +164,8 @@ class Appointment(models.Model):
 
 			else:
 
-				record.name = record.get_comment_code() + se + record.doctor.get_display_code() + se + record.get_type_code() + se + record.get_date_code()
+				#record.name = record.get_comment_code() + se + record.doctor.get_display_code() + se + record.get_type_code() + se + record.get_date_code()
+				record.name = record.get_patient_pre_code() + se + record.doctor.get_display_code() + se + record.get_type_code() + se + record.get_date_code()
 
 
 
@@ -200,23 +239,6 @@ class Appointment(models.Model):
 
 
 
-
-
-
-	patient_pre = fields.Char(
-			string='Paciente No existe',
-		)
-
-	dni_pre = fields.Char(
-			'DNI',
-		)
-
-
-
-	patient_exists = fields.Boolean(
-			'Paciente Existe ?',
-			default=True,
-		)
 
 
 
