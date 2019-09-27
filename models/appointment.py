@@ -15,6 +15,123 @@ class Appointment(models.Model):
 
 
 
+# ----------------------------------------------- Relational ---------------------------------------------
+
+	patient = fields.Many2one(
+			'oeh.medical.patient',
+			string='Paciente Existe',
+		)
+
+
+# ----------------------------------------------- Getters --------------------------------
+
+	# Get DNI Code
+	def get_dni_display_code(self):
+		#print()
+		#print('Get Display Code')
+
+		if self.dni_pre not in [False]:
+			code = self.dni_pre 
+		else:
+			code = 'x'
+
+		return code
+
+
+	# Get Comment Code
+	def get_comment_code(self):
+
+		if self.comment not in [False]:
+			words = self.comment.split()
+			code = words[0]
+		else:
+			code = 'x'
+
+		return code
+
+
+
+	# Get Type
+	def get_type_code(self):
+		_dic = {
+					'consultation': 	'Consulta',
+					'procedure': 		'Procedimiento',
+					'control': 			'Control',
+					'event': 			'Reunion',
+		}
+
+		code = _dic[self.app_type]
+
+		return code
+
+
+
+	# Get Date
+	def get_date_code(self):
+
+		code = self.date_start
+
+		code = app_funcs.time_delta(self, self.date_start, -300)
+
+		return code
+
+
+
+
+
+# ----------------------------------------------- Computes ---------------------------------------------
+
+	# Display
+	x_display = fields.Char(
+
+			compute='_compute_x_display',
+		)
+
+	@api.multi
+	def _compute_x_display(self):
+		_dic_state = {
+						'scheduled': 'C',
+						'pre_scheduled': 'N',
+		}
+		for record in self:
+
+			# Patient exists in DB
+			if record.patient.name not in [False]:
+
+				record.x_display = record.patient.get_display_code() + '-' + record.get_dni_display_code() + ' ' + str(record.doctor.idx) +  ' ' +  _dic_state[record.state]
+
+			# Does not exist
+			else:
+
+				record.x_display = record.get_comment_code() + ' ' + str(record.doctor.idx) +  ' ' +  _dic_state[record.state]
+
+
+
+	# Name
+	name = fields.Char(
+			'Nombre',
+			compute='_compute_name',
+		)
+
+	@api.multi
+	def _compute_name(self):
+
+		se = '-'
+
+		for record in self:
+
+			if record.patient.name not in [False]:
+
+				record.name = record.patient.get_display_code() + se + record.doctor.get_display_code() + se + record.get_type_code() + se + record.get_date_code()
+
+			else:
+
+				record.name = record.get_comment_code() + se + record.doctor.get_display_code() + se + record.get_type_code() + se + record.get_date_code()
+
+
+
+
+
 # ----------------------------------------------- On changes ---------------------------------------------
 	# On Change Dni
 	@api.onchange('dni_pre')
@@ -72,53 +189,8 @@ class Appointment(models.Model):
 
 
 
-# ----------------------------------------------- Get Type Code --------------------------------
-
-	#@api.multi
-	def get_type_code(self):
-
-		_dic = {
-					'consultation': 	'Consulta',
-					'procedure': 		'Procedimiento',
-					'control': 			'Control',
-					'event': 			'Reunion',
-		}
-
-		code = _dic[self.app_type]
-
-		return code
 
 
-
-# ----------------------------------------------- Get Date Code --------------------------------
-
-	#@api.multi
-	def get_date_code(self):
-
-		code = self.date_start
-
-		#code = app_funcs.time_delta(record, record.date_start, record.delta_min)
-		code = app_funcs.time_delta(self, self.date_start, -300)
-
-		return code
-
-
-
-
-# ----------------------------------------------- Get Comment Code --------------------------------
-
-	#@api.multi
-	def get_comment_code(self):
-
-		if self.comment not in [False]:
-
-			words = self.comment.split()
-			code = words[0]
-
-		else:
-			code = 'x'
-
-		return code
 
 
 
@@ -126,34 +198,10 @@ class Appointment(models.Model):
 # ----------------------------------------------- Natives ---------------------------------------------
 
 
-	name = fields.Char(
-			'Nombre',
-			compute='_compute_name',
-		)
-
-	@api.multi
-	def _compute_name(self):
-
-		se = '-'
-
-		for record in self:
-
-			if record.patient.name not in [False]:
-				#record.name = record.patient.get_display_code() + sep + record.doctor.name + sep + record.get_type_code()
-				#record.name = record.patient.get_display_code() + sep + record.doctor.get_display_code() + sep + record.get_type_code()
-				record.name = record.patient.get_display_code() + se + record.doctor.get_display_code() + se + record.get_type_code() + se + record.get_date_code()
-
-			else:
-				#record.name = record.comment + se + record.doctor.get_display_code() + se + record.get_type_code() + se + record.get_date_code()
-				record.name = record.get_comment_code() + se + record.doctor.get_display_code() + se + record.get_type_code() + se + record.get_date_code()
 
 
 
-	patient = fields.Many2one(
-			'oeh.medical.patient',
-			#string='Paciente',
-			string='Paciente Existe',
-		)
+
 
 	patient_pre = fields.Char(
 			string='Paciente No existe',
@@ -198,46 +246,10 @@ class Appointment(models.Model):
 		)
 
 
-	x_display = fields.Char(
-			compute='_compute_x_display',
-		)
-
-	@api.multi
-	#@api.depends('patient')
-	def _compute_x_display(self):
-		_dic_state = {
-						'scheduled': 'C',
-						'pre_scheduled': 'N',
-		}
-		for record in self:
-
-			# Patient exists in DB
-			if record.patient.name not in [False]:
-				#record.x_display = record.patient.get_display_code() + ' ' + str(record.doctor.idx) +  ' ' +  _dic_state[record.state]
-				record.x_display = record.patient.get_display_code() + '-' + record.get_dni_display_code() + ' ' + str(record.doctor.idx) +  ' ' +  _dic_state[record.state]
-
-			# Does not exist
-			else:
-				#record.x_display = record.patient_pre.replace(' ', '_') + ' ' + str(record.doctor.idx) +  ' ' +  _dic_state[record.state]
-				#record.x_display = record.comment.replace(' ', '_') + ' ' + str(record.doctor.idx) +  ' ' +  _dic_state[record.state]
-				record.x_display = record.get_comment_code() + ' ' + str(record.doctor.idx) +  ' ' +  _dic_state[record.state]
 
 
 
 
-# ----------------------------------------------- Get Display Code --------------------------------
-
-	#@api.multi
-	def get_dni_display_code(self):
-		#print()
-		#print('Get Display Code')
-
-		if self.dni_pre not in [False]:
-			code = self.dni_pre 
-		else:
-			code = 'x'
-
-		return code
 
 
 

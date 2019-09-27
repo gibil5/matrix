@@ -16,13 +16,14 @@
 					<header>
 
 						<!-- update -->
+<!--
 						<button 
 								type="object" 
 								class="oe_highlight"
 								name="update"
 								string="Actualizar"                               
 						/>
-
+-->
 
 						<!-- remove_myself -->
 						<button 
@@ -44,11 +45,25 @@
 
 								<field name="dni_pre"/>
 
+<!--
+										options="{'no_create': True, 'no_create_edit':True}" 
 
-								<field name="patient"
+																		'no_create_edit':	True, 
+
+
 															attrs="{     
-																		'required':     [('patient_exists', 'in', [True])], 
+																		'required':		[('patient_exists', 'in', [True])], 
 																}"
+-->
+
+								<field name="patient"		
+
+															options="{'no_create': True, 'no_create_edit':True}" 
+
+															attrs="{     
+																		'required':		[('patient_exists', 'in', [True])], 
+																}"
+
 
 									/>
 
@@ -63,7 +78,10 @@
 
 
 							<group>
-								<field name="doctor"		required="1"/>
+								<field name="doctor"		required="1"
+															
+															options="{'no_create': True, 'no_create_edit':True}"
+									/>
 
 								<field name="date_start"	required="1"/>
 
@@ -106,9 +124,9 @@
 					<field name="date_stop"/>
 					<field name="x_display"/>
 -->
-
+<!--
 					<field name="name"/>
-
+-->
 
 					<field name="date_start"/>
 					<field name="delta_min"/>

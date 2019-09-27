@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-
 from openerp import models, fields, api
 
 class Doctor(models.Model):
@@ -10,6 +9,7 @@ class Doctor(models.Model):
 
 
 
+# ----------------------------------------------- Natives --------------------------------
 	name = fields.Char()
 
 	idx = fields.Integer()
@@ -22,12 +22,15 @@ class Doctor(models.Model):
 
 # ----------------------------------------------- Get Display Code --------------------------------
 
-	#@api.multi
 	def get_display_code(self):
 
 		words = self.name.upper().split()
 		
-		code = words[0] + '_' + words[1]
+		if len(words) > 1:
+			code = words[0] + '_' + words[1]
+
+		else:
+			code = words[0]
 
 		return code
 
