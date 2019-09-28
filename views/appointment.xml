@@ -144,9 +144,10 @@
 					<field name="date_start"/>
 					<field name="delta_min"/>
 
+					<field name="patient_exists"/>
 					<field name="patient_pre"/>
+					<field name="patient"	string="Paciente"/>
 
-					<field name="patient"/>
 					<field name="dni_pre"/>
 					<field name="doctor"/>
 					<field name="app_type"/>
