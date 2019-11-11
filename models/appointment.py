@@ -15,6 +15,16 @@ class Appointment(models.Model):
 
 
 
+# ----------------------------------------------- Oeh Patient ---------------------------------------------
+	patient_mat = fields.Many2one(
+
+			'oeh.medical.patient',
+
+			#string='Paciente',
+		)
+
+
+
 # ----------------------------------------------- Natives ---------------------------------------------
 
 	patient = fields.Many2one(

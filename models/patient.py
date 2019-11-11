@@ -7,3 +7,5 @@ class Patient(models.Model):
    _name = 'matrix.patient'
 
    name = fields.Char()
+
+
