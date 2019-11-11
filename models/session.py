@@ -19,15 +19,15 @@ class Session(models.Model):
 
 # ----------------------------------------------------------- Relational --------------------------------
 
-	appointment = fields.Many2one(
+	#appointment = fields.Many2one(
 	
 			#'oeh.medical.appointment',
-			'matrix.appointment',
+	#		'matrix.appointment',
 	
-			string='Cita #',
-			required=False,
+	#		string='Cita #',
+	#		required=False,
 			#readonly=True,
 			#ondelete='cascade',
-		)
+	#	)
 
 
