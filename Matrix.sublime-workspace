@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"get",
+				"get_type_code"
+			],
+			[
 				"app",
 				"appointment"
 			],
@@ -510,10 +514,6 @@
 			[
 				"na",
 				"name_dic"
-			],
-			[
-				"service_ech",
-				"service_echography_ids"
 			]
 		]
 	},
@@ -523,16 +523,25 @@
 			"file": "__openerp__.py",
 			"settings":
 			{
-				"buffer_size": 2046,
+				"buffer_size": 2061,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "views/patient_app.xml",
+			"file": "readme.txt",
 			"settings":
 			{
-				"buffer_size": 1072,
+				"buffer_size": 57,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "models/appointment.py",
+			"settings":
+			{
+				"buffer_size": 6219,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -547,46 +556,10 @@
 			}
 		},
 		{
-			"file": "models/appointment.py",
+			"file": "models/session.py",
 			"settings":
 			{
-				"buffer_size": 6229,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "views/appointment.xml",
-			"settings":
-			{
-				"buffer_size": 3301,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "views/patient_personal.xml",
-			"settings":
-			{
-				"buffer_size": 5373,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "models/doctor.py",
-			"settings":
-			{
-				"buffer_size": 601,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "models/oeh_patient.TRASH.py",
-			"settings":
-			{
-				"buffer_size": 683,
+				"buffer_size": 611,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -665,12 +638,16 @@
 	},
 	"file_history":
 	[
+		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/patient_app.xml",
+		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/oeh_patient.TRASH.py",
+		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/doctor.py",
+		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/patient_personal.xml",
+		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/appointment.xml",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/__init__.py",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/patient.py",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/container.py",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/oehealth/oeh_medical/oeh_medical.py",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/sale/sale.py",
-		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/doctor.py",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/control.xml",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/oeh_patient.xml",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/readme.txt",
@@ -678,7 +655,6 @@
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/oeh_patient.py",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/safe/models/order.py",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/safe/models/models.py",
-		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/appointment.xml",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/session.py",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/app_funcs.py",
 		"/Users/gibil/Desktop/Knowledge-Management-System_9_0_181112_031018/knowledge/__openerp__.py",
@@ -698,7 +674,6 @@
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/security/matrix_security.TRASH.xml",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/oehealth/views/oehealth.xml",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/appointment_actions.xml",
-		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/patient_personal.xml",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/matrix.py",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/views/appointment_actions.TRASH.xml",
 		"/Users/gibil/Virtualenvs/Odoo9-min/odoo/addons/matrix/models/slot.py",
@@ -790,9 +765,7 @@
 		"/Users/gibil/cellar/github/price_list/models/configurator_emr.py",
 		"/Users/gibil/cellar/github/price_list/models/__init__.py",
 		"/Users/gibil/cellar/github/price_list/models/appointment/__init__.py",
-		"/Users/gibil/cellar/github/price_list/readme.txt",
-		"/Users/gibil/cellar/github/price_list/models/electronic/pl_acc_lib.py",
-		"/Users/gibil/cellar/github/price_list/models/electronic/acc_lib.py"
+		"/Users/gibil/cellar/github/price_list/readme.txt"
 	],
 	"find":
 	{
@@ -810,6 +783,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"get_type",
 			"words",
 			"user_id",
 			"sale.order",
@@ -929,7 +903,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -938,15 +912,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2046,
+						"buffer_size": 2061,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								862,
-								862
+								210,
+								210
 							]
 						],
 						"settings":
@@ -956,43 +930,71 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 237.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "views/patient_app.xml",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1072,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								372,
-								372
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/XML/XML.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 339.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
+					"buffer": 1,
+					"file": "readme.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 57,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								44,
+								44
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
 					"buffer": 2,
+					"file": "models/appointment.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6219,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1736,
+								1736
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 836.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
 					"file": "models/oeh_patient.py",
 					"semi_transient": false,
 					"settings":
@@ -1004,100 +1006,13 @@
 						"selection":
 						[
 							[
-								782,
-								782
+								172,
+								172
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Python/Python.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 342.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "models/appointment.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6229,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								350,
-								361
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 5.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "views/appointment.xml",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3301,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3126,
-								3126
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/XML/XML.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "views/patient_personal.xml",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5373,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								5373
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/XML/XML.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
@@ -1108,20 +1023,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "models/doctor.py",
+					"buffer": 4,
+					"file": "models/session.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 601,
+						"buffer_size": 611,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								405,
-								405
+								606,
+								606
 							]
 						],
 						"settings":
@@ -1133,36 +1048,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "models/oeh_patient.TRASH.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 683,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								247,
-								247
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -1395,7 +1281,7 @@
 		[
 			[
 				"",
-				"~/cellar/github/price_list/PriceList.sublime-project"
+				"~/cellar/bitbucket/web_calendar/WebCalendar.sublime-project"
 			],
 			[
 				"\t",
