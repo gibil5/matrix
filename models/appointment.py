@@ -16,7 +16,7 @@ class Appointment(models.Model):
 	name = fields.Char(
 			'Nombre',
 
-			compute='_compute_name',
+			#compute='_compute_name',
 		)
 
 	@api.multi
@@ -28,6 +28,9 @@ class Appointment(models.Model):
 			else:
 				#record.name = record.get_comment_code() + se + record.doctor.get_display_code() + se + record.get_type_code() + se + record.get_date_code()
 				record.name = record.get_patient_pre_code() + se + record.doctor.get_display_code() + se + record.get_type_code() + se + record.get_date_code()
+
+
+
 
 
 	# Display
@@ -54,6 +57,24 @@ class Appointment(models.Model):
 			else:
 				#record.x_display = record.get_patient_pre_code() + ' ' + str(record.doctor.idx) +  ' ' +  _dic_state[record.state]
 				record.x_display = record.get_patient_pre_code() + ' ' + str(record.doctor.idx) +  ' ' +  record.get_type_code()
+
+
+
+
+	# Date stop
+	date_stop = fields.Datetime(
+			index=False,
+
+			compute='_compute_date_stop',
+		)
+
+	@api.multi
+	#@api.depends('patient')
+	def _compute_date_stop(self):
+		for record in self:
+			record.date_stop = app_funcs.time_delta(record, record.date_start, record.delta_min)
+
+
 
 
 
@@ -225,18 +246,6 @@ class Appointment(models.Model):
 
 
 # ----------------------------------------------- Computes ----------------------------------------
-	date_stop = fields.Datetime(
-			index=False,
-
-			compute='_compute_date_stop',
-		)
-
-	@api.multi
-	#@api.depends('patient')
-	def _compute_date_stop(self):
-		for record in self:
-			record.date_stop = app_funcs.time_delta(record, record.date_start, record.delta_min)
-
 
 	delta_min = fields.Selection(
 			[
