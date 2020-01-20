@@ -1,0 +1,7 @@
+Rutter
+-------
+
+
+git commit -a -m 'Colors type'   
+
+git push 
